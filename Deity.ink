@@ -1,7 +1,10 @@
-Once upon a time... We wrote a shitty story
-
- * There were two choices.
- * There were four lines of content.
+D E I T Y
+-> Beggining
+==Beggining==
+ * Exist
+    -> END
+ + Slumber 
+    ->Beggining
 
 - They lived happily ever after.
     -> END
