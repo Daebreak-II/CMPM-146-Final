@@ -17,3 +17,40 @@ Little lights quickly dot the area, and a body, previously shapeless, takes form
 The body, a welcoming vessel, takes me in. and yet, there is still a pull.
 // Introduce all the visitable areas and the people
 - -> END
+
+
+
+== DayLoop== 
+->Forgotten
+
+== Day1 ==
+->END
+
+== Day2 ==
+->END
+
+== Day3 ==
+->END
+
+== Day4 ==
+->END
+
+== Day5 ==
+->END
+
+== Day6 ==
+->END
+
+ 
+ 
+ 
+ 
+ == NoFood ==
+->Forgotten
+
+== ALLDead== 
+->Forgotten
+
+== Forgotten ==
+you are forgotten
+->END
