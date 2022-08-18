@@ -16,30 +16,43 @@ Little lights quickly dot the area, and a body, previously shapeless, takes form
 * [Me.] 
 The body, a welcoming vessel, takes me in. and yet, there is still a pull.
 // Introduce all the visitable areas and the people
-- -> END
+- -> top_loop
 
 
 
-== DayLoop== 
+=== top_loop ===
+-> Day_1 ->
+-> Day_2 ->
+-> Day_3 ->
+-> Day_4 ->
+-> Day_5 ->
+-> Day_6 ->
+
 ->Forgotten
 
-== Day1 ==
-->END
+== Day_1 ==
+* Day one event
+->->
 
-== Day2 ==
-->END
+== Day_2 ==
+* Day two event
+->->
 
-== Day3 ==
-->END
+== Day_3 ==
+* Day three event
+->->
 
-== Day4 ==
-->END
+== Day_4 ==
+* Day four event
+->->
 
-== Day5 ==
-->END
+== Day_5 ==
+* Day five event
+->->
 
-== Day6 ==
-->END
+== Day_6 ==
+* Day six event
+->->
 
  
  
