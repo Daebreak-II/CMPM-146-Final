@@ -83,7 +83,7 @@ VAR currentFaith = some
     - currentPopulation ? tiny && currentFaith > strong:
         Their faith is strong, but my powers are not. Perhaps I need a larger following to regain some ground.
     -else:
-        I have a {currentPopulation} following with {currentFaith } in me.
+        I have a {currentPopulation} following with {currentFaith} faith in me.
     }
 - (done) -> ret
 
@@ -100,7 +100,7 @@ Day 1
     }
     <- day_1_main_storylet_description(->loop)
     <- day_1_side_storylet_menu_description(->loop)
-    <- check_follower_status(->Day_1)
+    <- check_follower_status(->loop)
     ->DONE
 
 === Day_1_night_event ===
