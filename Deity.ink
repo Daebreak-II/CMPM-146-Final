@@ -16,7 +16,6 @@ Little lights quickly dot the area, and a body, previously shapeless, takes form
 -
 * [Me.] 
 The body, a welcoming vessel, takes me in. and yet, there is still a pull.
-->Raid_By_Rival_Tribe
 // Introduce all the visitable areas and the people
 - -> END
 
