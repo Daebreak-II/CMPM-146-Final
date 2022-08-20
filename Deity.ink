@@ -20,12 +20,12 @@ In this void, there is no time, no matter, nothing.
 
 
 === top_loop ===
--> Day_1 ->
--> Day_2 ->
--> Day_3 ->
--> Day_4 ->
--> Day_5 ->
--> Day_6 ->
+-> Age_1 ->
+-> Age_2 ->
+-> Age_3 ->
+-> Age_4 ->
+-> Age_5 ->
+-> Age_6 ->
 
 ->Forgotten
 
@@ -58,15 +58,15 @@ LIST replayableFrequency = immediate, threeTurns, fiveTurns
 ~ return playable
 
 // Create list to keep track of time.
-LIST timeOfDay = morning, afternoon, evening, night
-VAR currentTime = afternoon
+LIST time = one, two, three, four
+VAR currentTime = one
 // Function progresses time forward, or resets currentTime to morning if currently night
 == function pass_time ==
 { 
-    - not (currentTime ? night):
+    - not (currentTime ? four):
         ~ currentTime++
     - else:
-        ~ currentTime = morning
+        ~ currentTime = one
 }
 
 // Vars for tracking follower/worshipper population and faith. current value is arbitrary
@@ -88,170 +88,323 @@ VAR currentFaith = some
 - (done) -> ret
 
 
-== Day_1 ==
-Day 1
+=== Age_1 ===
+Age 1
 - (loop)
     { currentPopulation ? gone: -> ALLDead }
     { currentFaith ? none: -> Forgotten }
-    It is {currentTime}.
-    {currentTime ? night:
-        -> Day_1_night_event ->
+    It has been {currentTime} {currentTime ? one: season | seasons} since (something)
+    {currentTime ? four:
+        -> Age_1_end_event ->
         ->->
     }
-    <- day_1_main_storylet_description(->loop)
-    <- day_1_side_storylet_menu_description(->loop)
+    <- Age_1_main_storylet_description(->loop)
+    <- Age_1_side_storylet_menu_description(->loop)
     <- check_follower_status(->loop)
     ->DONE
 
-=== Day_1_night_event ===
-+ [Add Day 1 night event here] {pass_time()}
+=== Age_1_end_event ===
++ [Add Age 1 night event here] {pass_time()}
 ->->
 
 
-VAR day1MainStoryletProps = oneShot
-=== day_1_main_storylet_description (->ret) ===
-{ StoryletPropTest(day1MainStoryletProps, day_1_main_storylet_body, ->day_1_main_storylet_body):
-    + [Day 1 main storylet option]
-      -> day_1_main_storylet_body ->
+VAR age1MainStoryletProps = oneShot
+=== Age_1_main_storylet_description (->ret) ===
+{ StoryletPropTest(age1MainStoryletProps, Age_1_main_storylet_body, ->Age_1_main_storylet_body):
+    + [Age 1 main storylet option]
+      -> Age_1_main_storylet_body ->
 
     -> ret
 }
 ->DONE
 
-=== day_1_main_storylet_body ===
+=== Age_1_main_storylet_body ===
 something happened, and time has passed (add story content here)
 {pass_time()}
 ->->
 
-VAR day1SideStoryletMenuProps = (replayable, immediate)
-=== day_1_side_storylet_menu_description (->ret) ===
-{ StoryletPropTest(day1SideStoryletMenuProps, day_1_side_storylet_menu, ->day_1_side_storylet_menu) && ( not(currentTime ? evening) && not day_1_main_storylet_body) || (currentTime ? evening && day_1_main_storylet_body):
-    + [Day 1 side storylet option]
-      -> day_1_side_storylet_menu ->
+VAR age1SideStoryletMenuProps = (replayable, immediate)
+=== Age_1_side_storylet_menu_description (->ret) ===
+{ StoryletPropTest(age1SideStoryletMenuProps, Age_1_side_storylet_menu, ->Age_1_side_storylet_menu) && ( not(currentTime ? three) && not Age_1_main_storylet_body) || (currentTime < three && Age_1_main_storylet_body):
+    + [Age 1 side storylet option]
+      -> Age_1_side_storylet_menu ->
 
     -> ret
 }
 ->DONE
 
-=== day_1_side_storylet_menu ===
+=== Age_1_side_storylet_menu ===
+// Tunnel to various storylets, use {passTime()} at the end of the tunnel before returning
 +   [option 1] {pass_time()}
 +   [option 2] {pass_time()}
 +   [option 3] {pass_time()}
 
 - ->->
 
-== Day_2 ==
-Day 2
+=== Age_2 ===
+Age 2
 - (loop)
-It is {currentTime}.
-    * [Main story option] -> day_2_main_storylet ->
-    + [Side story option] {pass_time()}
-    
--  { currentPopulation ? gone: -> ALLDead }
--  { currentFaith ? none: -> Forgotten }    
--   {currentTime < night:
-        ->loop
+    { currentPopulation ? gone: -> ALLDead }
+    { currentFaith ? none: -> Forgotten }
+    It has been {currentTime} {currentTime ? one: season | seasons} since (something)
+    {currentTime ? four:
+        -> Age_2_end_event ->
+        ->->
     }
-// At this point, the time is night. Wrap up the day and prepare for the second one.
-* \(Day 2 night event)
-{pass_time()}
+    <- Age_2_main_storylet_description(->loop)
+    <- Age_2_side_storylet_menu_description(->loop)
+    <- check_follower_status(->loop)
+    ->DONE
+
+=== Age_2_end_event ===
++ [Add Age 2 End event here] {pass_time()}
 ->->
 
 
-=== day_2_main_storylet ===
+VAR age2MainStoryletProps = oneShot
+=== Age_2_main_storylet_description (->ret) ===
+{ StoryletPropTest(age2MainStoryletProps, Age_2_main_storylet_body, ->Age_2_main_storylet_body):
+    + [Age 2 main storylet option]
+      -> Age_2_main_storylet_body ->
+
+    -> ret
+}
+->DONE
+
+=== Age_2_main_storylet_body ===
 something happened, and time has passed (add story content here)
 {pass_time()}
 ->->
 
-== Day_3 ==
-Day 3
+VAR age2SideStoryletMenuProps = (replayable, immediate)
+=== Age_2_side_storylet_menu_description (->ret) ===
+{ StoryletPropTest(age2SideStoryletMenuProps, Age_2_side_storylet_menu, ->Age_2_side_storylet_menu) && ( not(currentTime ? three) && not Age_2_main_storylet_body) || (currentTime <= three && Age_2_main_storylet_body):
+    + [Age 2 side storylet option]
+      -> Age_2_side_storylet_menu ->
+
+    -> ret
+}
+->DONE
+
+=== Age_2_side_storylet_menu ===
+// Tunnel to various storylets, use {passTime()} at the end of the tunnel before returning
++   [option 1] {pass_time()}
++   [option 2] {pass_time()}
++   [option 3] {pass_time()}
+
+- ->->
+
+=== Age_3 ===
+Age 3
 - (loop)
-It is {currentTime}.
-    * [Main story option] -> day_3_main_storylet ->
-    + [Side story option] {pass_time()}
-    
--  { currentPopulation ? gone: -> ALLDead }
--  { currentFaith ? none: -> Forgotten }    
--   {currentTime < night:
-        ->loop
+    { currentPopulation ? gone: -> ALLDead }
+    { currentFaith ? none: -> Forgotten }
+    It has been {currentTime} {currentTime ? one: season | seasons} since (something)
+    {currentTime ? four:
+        -> Age_3_end_event ->
+        ->->
     }
-// At this point, the time is night. Wrap up the day and prepare for the second one.
-* \(Day 3 night event)
-{pass_time()}
+    <- Age_3_main_storylet_description(->loop)
+    <- Age_3_side_storylet_menu_description(->loop)
+    <- check_follower_status(->loop)
+    ->DONE
+
+=== Age_3_end_event ===
++ [Add Age 3 End event here] {pass_time()}
 ->->
 
 
-=== day_3_main_storylet ===
+VAR age3MainStoryletProps = oneShot
+=== Age_3_main_storylet_description (->ret) ===
+{ StoryletPropTest(age3MainStoryletProps, Age_3_main_storylet_body, ->Age_3_main_storylet_body):
+    + [Age 3 main storylet option]
+      -> Age_3_main_storylet_body ->
+
+    -> ret
+}
+->DONE
+
+=== Age_3_main_storylet_body ===
 something happened, and time has passed (add story content here)
 {pass_time()}
 ->->
 
-== Day_4 ==
-Day 4
+VAR age3SideStoryletMenuProps = (replayable, immediate)
+=== Age_3_side_storylet_menu_description (->ret) ===
+{ StoryletPropTest(age3SideStoryletMenuProps, Age_3_side_storylet_menu, ->Age_3_side_storylet_menu) && ( not(currentTime ? three) && not Age_3_main_storylet_body) || (currentTime <= three && Age_3_main_storylet_body):
+    + [Age 3 side storylet option]
+      -> Age_3_side_storylet_menu ->
+
+    -> ret
+}
+->DONE
+
+=== Age_3_side_storylet_menu ===
+// Tunnel to various storylets, use {passTime()} at the end of the tunnel before returning
++   [option 1] {pass_time()}
++   [option 2] {pass_time()}
++   [option 3] {pass_time()}
+
+- ->->
+
+=== Age_4 ===
+Age 4
 - (loop)
-It is {currentTime}.
-    * [Main story option] -> day_4_main_storylet ->
-    + [Side story option] {pass_time()}
-    
--  { currentPopulation ? gone: -> ALLDead }
--  { currentFaith ? none: -> Forgotten }    
--   {currentTime < night:
-        ->loop
+    { currentPopulation ? gone: -> ALLDead }
+    { currentFaith ? none: -> Forgotten }
+    It has been {currentTime} {currentTime ? one: season | seasons} since (something)
+    {currentTime ? four:
+        -> Age_4_end_event ->
+        ->->
     }
-// At this point, the time is night. Wrap up the day and prepare for the second one.
-* \(Day 4 night event)
-{pass_time()}
+    <- Age_4_main_storylet_description(->loop)
+    <- Age_4_side_storylet_menu_description(->loop)
+    <- check_follower_status(->loop)
+    ->DONE
+
+=== Age_4_end_event ===
++ [Add Age 4 End event here] {pass_time()}
 ->->
 
 
-=== day_4_main_storylet ===
+VAR age4MainStoryletProps = oneShot
+=== Age_4_main_storylet_description (->ret) ===
+{ StoryletPropTest(age4MainStoryletProps, Age_4_main_storylet_body, ->Age_4_main_storylet_body):
+    + [Age 4 main storylet option]
+      -> Age_4_main_storylet_body ->
+
+    -> ret
+}
+->DONE
+
+=== Age_4_main_storylet_body ===
 something happened, and time has passed (add story content here)
 {pass_time()}
 ->->
 
-== Day_5 ==
-Day 5
+VAR age4SideStoryletMenuProps = (replayable, immediate)
+=== Age_4_side_storylet_menu_description (->ret) ===
+{ StoryletPropTest(age4SideStoryletMenuProps, Age_4_side_storylet_menu, ->Age_4_side_storylet_menu) && ( not(currentTime ? three) && not Age_4_main_storylet_body) || (currentTime <= three && Age_4_main_storylet_body):
+    + [Age 4 side storylet option]
+      -> Age_4_side_storylet_menu ->
+
+    -> ret
+}
+->DONE
+
+=== Age_4_side_storylet_menu ===
+// Tunnel to various storylets, use {passTime()} at the end of the tunnel before returning
++   [option 1] {pass_time()}
++   [option 2] {pass_time()}
++   [option 3] {pass_time()}
+
+- ->->
+
+=== Age_5 ===
+Age 5
 - (loop)
-It is {currentTime}.
-    * [Main story option] -> day_5_main_storylet ->
-    + [Side story option] {pass_time()}
-    
--  { currentPopulation ? gone: -> ALLDead }
--  { currentFaith ? none: -> Forgotten }    
--   {currentTime < night:
-        ->loop
+    { currentPopulation ? gone: -> ALLDead }
+    { currentFaith ? none: -> Forgotten }
+    It has been {currentTime} {currentTime ? one: season | seasons} since (something)
+    {currentTime ? four:
+        -> Age_5_end_event ->
+        ->->
     }
-// At this point, the time is night. Wrap up the day and prepare for the second one.
-* \(Day 5 night event)
-{pass_time()}
+    <- Age_5_main_storylet_description(->loop)
+    <- Age_5_side_storylet_menu_description(->loop)
+    <- check_follower_status(->loop)
+    ->DONE
+
+=== Age_5_end_event ===
++ [Add Age 5 End event here] {pass_time()}
 ->->
 
 
-=== day_5_main_storylet ===
+VAR age5MainStoryletProps = oneShot
+=== Age_5_main_storylet_description (->ret) ===
+{ StoryletPropTest(age5MainStoryletProps, Age_5_main_storylet_body, ->Age_5_main_storylet_body):
+    + [Age 5 main storylet option]
+      -> Age_5_main_storylet_body ->
+
+    -> ret
+}
+->DONE
+
+=== Age_5_main_storylet_body ===
 something happened, and time has passed (add story content here)
 {pass_time()}
 ->->
 
-== Day_6 ==
-Day 5
+VAR age5SideStoryletMenuProps = (replayable, immediate)
+=== Age_5_side_storylet_menu_description (->ret) ===
+{ StoryletPropTest(age5SideStoryletMenuProps, Age_5_side_storylet_menu, ->Age_5_side_storylet_menu) && ( not(currentTime ? three) && not Age_5_main_storylet_body) || (currentTime <= three && Age_5_main_storylet_body):
+    + [Age 5 side storylet option]
+      -> Age_5_side_storylet_menu ->
+
+    -> ret
+}
+->DONE
+
+=== Age_5_side_storylet_menu ===
+// Tunnel to various storylets, use {passTime()} at the end of the tunnel before returning
++   [option 1] {pass_time()}
++   [option 2] {pass_time()}
++   [option 3] {pass_time()}
+
+- ->->
+
+=== Age_6 ===
+Age 6
 - (loop)
-It is {currentTime}.
-    * [Main story option] -> day_6_main_storylet ->
-    + [Side story option] {pass_time()}
-    
--  { currentPopulation ? gone: -> ALLDead }
--  { currentFaith ? none: -> Forgotten }    
--   {currentTime < night:
-        ->loop
+    { currentPopulation ? gone: -> ALLDead }
+    { currentFaith ? none: -> Forgotten }
+    It has been {currentTime} {currentTime ? one: season | seasons} since (something)
+    {currentTime ? four:
+        -> Age_6_end_event ->
+        ->->
     }
-* \(Day 6 night event)
+    <- Age_6_main_storylet_description(->loop)
+    <- Age_6_side_storylet_menu_description(->loop)
+    <- check_follower_status(->loop)
+    ->DONE
+
+=== Age_6_end_event ===
++ [Add Age 6 End event here] {pass_time()}
+->->
+
+
+VAR age6MainStoryletProps = oneShot
+=== Age_6_main_storylet_description (->ret) ===
+{ StoryletPropTest(age6MainStoryletProps, Age_6_main_storylet_body, ->Age_6_main_storylet_body):
+    + [Age 6 main storylet option]
+      -> Age_6_main_storylet_body ->
+
+    -> ret
+}
+->DONE
+
+=== Age_6_main_storylet_body ===
+something happened, and time has passed (add story content here)
 {pass_time()}
 ->->
 
+VAR age6SideStoryletMenuProps = (replayable, immediate)
+=== Age_6_side_storylet_menu_description (->ret) ===
+{ StoryletPropTest(age6SideStoryletMenuProps, Age_6_side_storylet_menu, ->Age_6_side_storylet_menu) && ( not(currentTime ? three) && not Age_6_main_storylet_body) || (currentTime <= three && Age_6_main_storylet_body):
+    + [Age 6 side storylet option]
+      -> Age_6_side_storylet_menu ->
 
-=== day_6_main_storylet ===
-something happened, and time has passed (add story content here)
-->->
+    -> ret
+}
+->DONE
+
+=== Age_6_side_storylet_menu ===
+// Tunnel to various storylets, use {passTime()} at the end of the tunnel before returning
++   [option 1] {pass_time()}
++   [option 2] {pass_time()}
++   [option 3] {pass_time()}
+
+- ->->
  
  
  == NoFood ==
