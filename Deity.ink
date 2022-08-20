@@ -23,21 +23,38 @@ Upon reaching the shrine, a pungent smell filled my nostrils. It seems that my f
 == Response ==
 * Respond with kindness
         ~OddsToAddFollowers += 5
-        
+        //STUFFS
 * No response
 I have provided for my followers for eternities and all they could provide me with is some snacks and fruits? Unbelievable. 
         ~OddsToLoseFollowers += 5
+        //STUFFS
 
 
 -
 ->END
-
+//-> Miracle
 == Miracle ==
+The oceans and lakes have been the lifeline of my followers for eternities. But it seems that my followers have overused their supply of water, leaving them in a severe drought. 
+
 * Create Miracle
-Increase faith and gain followers
+I use my powers to create a massive storm for several weeks, filling their oceans and lakes, replenishing their water supply
+    ~OddsToAddFollowers += 5
+    ->END
+    
+*Do Nothing
+My followers have abused my kindness for years. I leave them to fend for themselves. 
+    ~OddsToLoseFollowers += 5
+    ->END
+    
 * Create Disaster
-Decrease faith and lose followers
+I use my powers to increase the power of the Sun, causing severe heatwaves and evaporating the remaining supply of water. 
+    ~OddsToLoseFollowers += 5
+    ->AID
+
+== AID == 
     * Respond to plea for aid
-    Increase faith and gain followers
+    
+    ->END
+    *Ignore pleas for aid
 -
 ->END
