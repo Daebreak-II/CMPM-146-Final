@@ -91,8 +91,8 @@ VAR currentFaith = some
 === Age_1 ===
 Age 1
 - (loop)
-    { currentPopulation ? gone: -> ALLDead }
-    { currentFaith ? none: -> Forgotten }
+    { currentPopulation ? gone: -> no_population_end }
+    { currentFaith ? none: -> no_faith_end }
     It has been {currentTime} {currentTime ? one: season | seasons} since (something)
     {currentTime ? four:
         -> Age_1_end_event ->
@@ -144,8 +144,8 @@ VAR age1SideStoryletMenuProps = (replayable, immediate)
 === Age_2 ===
 Age 2
 - (loop)
-    { currentPopulation ? gone: -> ALLDead }
-    { currentFaith ? none: -> Forgotten }
+    { currentPopulation ? gone: -> no_population_end }
+    { currentFaith ? none: -> no_faith_end }
     It has been {currentTime} {currentTime ? one: season | seasons} since (something)
     {currentTime ? four:
         -> Age_2_end_event ->
@@ -197,8 +197,8 @@ VAR age2SideStoryletMenuProps = (replayable, immediate)
 === Age_3 ===
 Age 3
 - (loop)
-    { currentPopulation ? gone: -> ALLDead }
-    { currentFaith ? none: -> Forgotten }
+    { currentPopulation ? gone: -> no_population_end }
+    { currentFaith ? none: -> no_faith_end }
     It has been {currentTime} {currentTime ? one: season | seasons} since (something)
     {currentTime ? four:
         -> Age_3_end_event ->
@@ -250,8 +250,8 @@ VAR age3SideStoryletMenuProps = (replayable, immediate)
 === Age_4 ===
 Age 4
 - (loop)
-    { currentPopulation ? gone: -> ALLDead }
-    { currentFaith ? none: -> Forgotten }
+    { currentPopulation ? gone: -> no_population_end }
+    { currentFaith ? none: -> no_faith_end }
     It has been {currentTime} {currentTime ? one: season | seasons} since (something)
     {currentTime ? four:
         -> Age_4_end_event ->
@@ -303,8 +303,8 @@ VAR age4SideStoryletMenuProps = (replayable, immediate)
 === Age_5 ===
 Age 5
 - (loop)
-    { currentPopulation ? gone: -> ALLDead }
-    { currentFaith ? none: -> Forgotten }
+    { currentPopulation ? gone: -> no_population_end }
+    { currentFaith ? none: -> no_faith_end }
     It has been {currentTime} {currentTime ? one: season | seasons} since (something)
     {currentTime ? four:
         -> Age_5_end_event ->
@@ -356,8 +356,8 @@ VAR age5SideStoryletMenuProps = (replayable, immediate)
 === Age_6 ===
 Age 6
 - (loop)
-    { currentPopulation ? gone: -> ALLDead }
-    { currentFaith ? none: -> Forgotten }
+    { currentPopulation ? gone: -> no_population_end }
+    { currentFaith ? none: -> no_faith_end }
     It has been {currentTime} {currentTime ? one: season | seasons} since (something)
     {currentTime ? four:
         -> Age_6_end_event ->
@@ -426,11 +426,34 @@ VAR age6SideStoryletMenuProps = (replayable, immediate)
 ->->
 
  
- == NoFood ==
-->Forgotten
+=== no_faith_end ===
+// Note: Maybe write different content based on different population sizes (tiny/any in between/vast)
+*   Something is wrong.
+    My body, though massless, takes effort to move.
+-*  Did something happen to the people?
+    I muster what strength I have left to shift my view to the people.
+-   Nothing seems to be amiss, everyone is going about their day as if everything is fine.
+*   [My existence.]
+    Wait. The pull that drew me towards my followers is no longer there.
+-   They no longer believe that I am there or my help.
+*   [*Start a nearby fire*]
+*   [*Cause some rainfall*]
+-   It is too late. Try as I might, there is no more I can do for my people, or rather, these people. Just before, lifting a limb took nearly everything in me. There is no more to lift.
+*   Everything is fading.
+    Slowly but surely, I begin to lose any sense that I once had. The space I had taken up has begun to reclaim what I once was. My vision begins to darken, and the cold void turns into empty void.
+-   I wonder how they will survive without any more help. Have my actions gone unnoticed? Have I only hurt the people since their call for aid? It matters no more.
+*   I am void.
+->END
 
-== ALLDead== 
-->Forgotten
+=== no_population_end ===
+*   I have erred.[] My last actions have led the people to their demise. I no longer have followers, and even worse, there is nothing else to provide me energy through belief.
+-*  All there is to do now is wait.
+    I can only hope that the forces that pushed me into existence are swift and merciful with my undoing.
+-*  Everything is fading.
+    Slowly but surely, I begin to lose any sense that I once had. The space I had taken up has begun to reclaim what I once was. My vision begins to darken, and the cold void turns into empty void.
+-   I wonder if I could have done anything different to lead to people to thrive. Perhaps it was inevitable that these lives, like any other, were to perish at any moment. A cruel fate even I am caught in. However, it no longer matters.
+*   I am void.
+->END
 
 == Forgotten ==
 you are forgotten
