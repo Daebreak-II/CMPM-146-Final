@@ -125,7 +125,7 @@ something happened, and time has passed (add story content here)
 
 VAR age1SideStoryletMenuProps = (replayable, immediate)
 === Age_1_side_storylet_menu_description (->ret) ===
-{ StoryletPropTest(age1SideStoryletMenuProps, Age_1_side_storylet_menu, ->Age_1_side_storylet_menu) && ( not(currentTime ? three) && not Age_1_main_storylet_body) || (currentTime < three && Age_1_main_storylet_body):
+{ StoryletPropTest(age1SideStoryletMenuProps, Age_1_side_storylet_menu, ->Age_1_side_storylet_menu) && ( not(currentTime ? three) && not Age_1_main_storylet_body) || (currentTime <= three && Age_1_main_storylet_body):
     + [Age 1 side storylet option]
       -> Age_1_side_storylet_menu ->
 
@@ -188,7 +188,7 @@ VAR age2SideStoryletMenuProps = (replayable, immediate)
 
 === Age_2_side_storylet_menu ===
 // Tunnel to various storylets, use {passTime()} at the end of the tunnel before returning
-+   [option 1] {pass_time()}
++   [option 1] ->side_storylet_poor_harvest_body->
 +   [option 2] {pass_time()}
 +   [option 3] {pass_time()}
 
@@ -406,6 +406,25 @@ VAR age6SideStoryletMenuProps = (replayable, immediate)
 
 - ->->
  
+=== side_storylet_poor_harvest_body ===
+    Looking towards the river, I spot someone in the middle of a nearby field, tool in hand and planted solidly into the soil. A crowd seems to be gathering, and growing displeased at the sight. 
+*   Was there a conflict? [] No, there couldn't have been any. There's no visible tension between any of the parties, and yet, there is a heavy atmosphere emenating from the area.
+-   The person in the field drops to their knees, while the mass, which has stopped accumulating new people continues to stare solemnly at the one in the field.
+*   [*Look to the field*]
+    A closer look to the field shows that the crops have no food to bear. Withered away by pests and the elements, it will be much more difficult for the people to survive the following seasons.
+*   [*Look to the crowd*]
+    The people, realizing that there is no way to salvage what is lost, begin to discuss ways to divide food amongst themselves. That can only mean one thing about that field.
+-   Either way, they will need some help if they are to survive.
+// Review the text after this point
+*   [*Rejuvenate the crops*] I gently grab the stalks of one of the crops as a quick test to see that I can regrow the plants. Seeing that it works, I channel what {currentFaith ? little: little } energy I have from their belief in me to channel it into the field.
+    Slowly but surely, the plants turn, changing from wilted, chewed away forms to flowering and thriving crops, and the crops that bear fruit, begin to do so. Though the crops are starting to regrow, they will have to be gathered early. The people will only barely get by without starving, but they'll know I helped them.
+    ~currentFaith++
+
+*   [*Enrich the forests*] Just as the people think, the crops are a lost cause. Rather than trying to rebuild what is lost, I can send {currentFaith < strong: a little | quite a bit of } energy into the nearby woods.
+    The energy should be {currentFaith < strong: just } enough to produce more wild berries and fruits to also attract some animals. Though my actions may go unnoticed, the people should have plenty of food should they investigate the forest.
+-   {pass_time()}
+->->
+
  
  == NoFood ==
 ->Forgotten
