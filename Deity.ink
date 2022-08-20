@@ -52,9 +52,12 @@ I use my powers to increase the power of the Sun, causing severe heatwaves and e
     ->AID
 
 == AID == 
-    * Respond to plea for aid
-    
+    * Respond to pleas for aid
+    I realize that my followers are among the most loyal in the entire universe. I respond by reversing the power of the Sun and increasing the chance of rainfall. 
+    ~OddsToAddFollowers += 5
     ->END
     *Ignore pleas for aid
+    My followers have abused my kindness for years. I leave them to fend for themselves. 
+    ~OddsToLoseFollowers += 5
 -
 ->END
