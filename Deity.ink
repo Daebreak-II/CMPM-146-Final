@@ -77,6 +77,23 @@ You ponder what's happened. What does it mean?
 You enter a deep sleep, and fade into the quiet darkness.
 + [...] ->Beginning
 
+== Fire_Age ==
+Time passes, and yet the fire at the center of the community burns on. They tend to it day and night, and discover it many uses
+
+- (Fire_benefits)
+* [Food]
+    The abbility to rudimentarily cook food allows for increadible meals, 
+->Fire_benefits
+* [Light]
+    The light cast by the fire allows activities late into the night, increasing productivity and strengthening the community.
+-> Fire_benefits
+* [Warmth]
+    It keeps the terrible cold at bay, and for the first time ver, the people no longer have to move to a warmer climate to survive ->Fire_benefits
++ -> 
+    Slowly but surely, the community grows, and to their new members they tell the story of the first fire that was gifted to them, by you.
+
+
+-> top_loop
 
 
 === top_loop ===
