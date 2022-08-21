@@ -142,6 +142,7 @@ VAR age1SideStoryletMenuProps = (replayable, immediate)
 - ->->
 
 === Age_2 ===
+// Agricultural age (MOVE IF WRONG)
 Age 2
 - (loop)
     { currentPopulation ? gone: -> no_population_end }
@@ -157,7 +158,12 @@ Age 2
     ->DONE
 
 === Age_2_end_event ===
-+ [Add Age 2 End event here] {pass_time()}
+    Since the people have an understanding of the lay of the land and lay down some seeds, there is now a steady source of food. No longer are the days where several people leave and expend a lot of energy just to find small amounts of food for the rest of my people.
+    Now, they have all that time for other actions. Perhaps I should see what they've been up to.
+*   [*Check out the buildings*] Since I've last had a look at the settlement, it looks like it's now set in stone that they will be living here. The material used for the buildings have changed to be much more solid.
+*   [*Have a look at the food*] It looks like they have a building just to store all the food they've grown now. The fields have gifted my followers with an abundance of food. There's so much food that they even feed other animals too.
+-   I've managed to keep them alive, and they still believe in me. I'm beginning to grow attached to them.
+{pass_time()}
 ->->
 
 
@@ -172,7 +178,12 @@ VAR age2MainStoryletProps = oneShot
 ->DONE
 
 === Age_2_main_storylet_body ===
-something happened, and time has passed (add story content here)
+    Watching as the people hunt to find food for their next meal, it seems that they have seen better days. There are almost no animals around, and many that are found are startled away by the hunting party before they can take any action. Aside from the rather uninteresting, near-endless search, there is one critter that these hunters observe.
+*   [What is it doing?] The critter, blissfully unaware that it is being observed, has some food in its mouth while uplifting some soil with its tiny paws. After dropping its food into the hole, it scurries away.
+-   Defeated, the hunters decide to gather some berries, fruits and some grains on the way back. They don't look like they'll have a feast, but the food will keep them alive for the upcoming days.
+    Upon their return to the rest of the people, they share the food amongst themselves, while a small group of people detached from everyone else are enjoying the company of each other. After finishing their food, they discard what cannot be eaten.
+*   [*Bury the discarded seeds*] Using some of my powers, I move some topsoil to cover the seeds. Like the people, I retreat to slumber, albeit at a much longer time scale.
+-   Upon my return, it seems like the people are trying something by the river. Some of them, tool in hand, are turning the soil while others are following them, sprinkling small objects into the soil.
 {pass_time()}
 ->->
 
