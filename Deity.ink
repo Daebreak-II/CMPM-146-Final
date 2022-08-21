@@ -37,8 +37,9 @@ I have provided for my followers for eternities and all they could provide me wi
 The oceans and lakes have been the lifeline of my followers for eternities. But it seems that my followers have overused their supply of water, leaving them in a severe drought. 
 
 * Create Miracle
-I use my powers to create a massive storm for several weeks, filling their oceans and lakes, replenishing their water supply
+I use my powers to create a massive storm which lasts for several weeks. The oceans and lakes  become filled once again, replenishing their water supply. 
     ~OddsToAddFollowers += 5
+    //+ agriculture points?
     ->END
     
 *Do Nothing
