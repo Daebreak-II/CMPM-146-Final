@@ -255,14 +255,34 @@ VAR age2MainStoryletProps = oneShot
 ->DONE
 
 === Age_2_main_storylet_body ===
+{ side_storylet_poor_harvest_body: -> skip}
+-   (begin)
     Watching as the people hunt to find food for their next meal, it seems that they have seen better days. There are almost no animals around, and many that are found are startled away by the hunting party before they can take any action. Aside from the rather uninteresting, near-endless search, there is one critter that these hunters observe.
 *   [What is it doing?] The critter, blissfully unaware that it is being observed, has some food in its mouth while uplifting some soil with its tiny paws. After dropping its food into the hole, it scurries away.
 -   Defeated, the hunters decide to gather some berries, fruits and some grains on the way back. They don't look like they'll have a feast, but the food will keep them alive for the upcoming days.
     Upon their return to the rest of the people, they share the food amongst themselves, while a small group of people detached from everyone else are enjoying the company of each other. After finishing their food, they discard what cannot be eaten.
+    {side_storylet_poor_harvest_body:
+    {pass_time()}
+    ->->
+}
 *   [*Bury the discarded seeds*] Using some of my powers, I move some topsoil to cover the seeds. Like the people, I retreat to slumber, albeit at a much longer time scale.
--   Upon my return, it seems like the people are trying something by the river. Some of them, tool in hand, are turning the soil while others are following them, sprinkling small objects into the soil.
-{pass_time()}
-->->
+-   (skip)
+    Upon my return, it seems like the people are trying something by the river {side_storylet_poor_harvest_body: again}. Some of them, tool in hand, are turning the soil while others are following them, sprinkling small objects into the soil.
+{not side_storylet_poor_harvest_body:
+    {pass_time()}
+    ->->
+}
+    Shortly after the people finish their work, they return to rest.
+    The following day, a group forms to set out and collect some food.
+*   [*Observe the group*] -> begin
+*   [*Continue observing the village*] As they leave the settlement, the field by the river calls for attention. Did the people just forget about it?
+-*   [*Leave it be*]
+    Ah well, if they have left the field alone, maybe they don't need what has been tossed out. I can return to check on the people after some rest.
+*   {currentFaith >= some} [*Create some rain*]
+    If they are waiting for something to happen, here it is. I push some energy into the nearby clouds, and droplets pelt the field.
+*   [*Observe the group instead*] -> begin
+-   {pass_time()}
+    ->->
 
 VAR age2SideStoryletMenuProps = (replayable, immediate)
 === Age_2_side_storylet_menu_description (->ret) ===
