@@ -1,85 +1,71 @@
 // D E I T Y
+// -> Fire_Age
 -> Beginning
 
-- -> top_loop
-
-// catch all end statement
--> END
-
 ==Beginning==
-It is empty. There is nothing perceivable.
-In this void, there is no time, no matter, nothing.
-+ Who am I?
-There is no identity. The concept of "I" nor "you" exist in the void.
-+ Where am I?
-There is no where. Nor "I". Just the void.
-//+ \+Attempt to feel around for somethin+
--
+/*What is a god? An omnipotent, all powerful being, with total control over reality itself? Is it a singular being, or are there many, each governing a separate aspect of the world we perceive? Or is that just our minds, imagining something to our own likeness and understanding, which in reality would be very much beyond our control and comprehension of the world. What if it’s both?
+*/
 + [...]
-A flash of what can only be described as light illuminates the space.
-Little lights quickly dot the area, and a body, previously shapeless, takes form.
+You
+Awake.
+There is nothing, no one, no thing, no self, not even concept in this void. 
+Listless it drifts, even though there is nothing which to drift on or by. 
+It is timeless, an eternity passes in a second, and a second takes all eternity, if such a thing did exist. 
 -
-+ [Me.] 
-The body, a welcoming vessel, takes me in. and yet, there is still a pull.
++ [Drift]
+You drift/wait, but it is the same. It is the very same moment as the first, or if there was a difference, it is unperceivable.
 -
-+ [Feel] 
-Something, in the distance; Inexorable, but irressistable.
-+ [Turn away] ->turn_away
--
-+ [Move closer]
-A pinprick of light, seemingly infinitely far away. Something existing, pulsing, living.
-+ [Turn away] ->turn_away
--
-+ [Look]
-It is a small window, and as you come closer the sensation of of light is joined by sound and color.
-+ [Turn away] ->turn_away
--
-Within the window are shapes, moving with certainty and purpose. 
-+ [Look closer] -> subjects
-+ [Turn away] ->turn_away
-
-- (subjects)
-The shapes move with unknown purpose and determination. Fasinatingly so. 
-+ [Observe] 
-+ [Turn away] ->turn_away
++ [List]
+And yet, you are still here. What does that mean? What is “you”?
 - 
-You notice, as you watch, that the people are haggard. They carry little, and the land around them is not as vibrant as it first seemed. 
++ [Think]
++ [Ponder]
+-
+You wonder, for an eternity, or a second; it matters not. Waiting for some epiphany, some action, some thought, some motion, anything. But it does not come. For there is nothing. 
++ [Search]
+Aware of your own existence, you begin to look outwards. Or inwards. There is no boundary between the self and everything that is. But you search anyways
+-
++ [Scour]
+There must be something, anything, besides you. You cannot be all that there is. And yet, you find nothing. There is nothing else. 
+-
++ [Concentrate]
+You focus, but what is there to focus on? Reality is empty, and so are you. But you are something, a concept or idea that can be understood, provide a substrate for thought. And so you focus on whatever it is you are. A glittering form appears from the void, shapeless and ever changing, but it is something. Like your mind, it is a concept to hold onto. It takes you in, as you do it; A body to call your own. Something, in this vast endlessness. A barrier between the self and every thing that is not. But as you play and marvel at your new form, it presents to you a stimulus. A sensation. A feeling. There is something out there, tickling your senses. Small, but salient.
+-
++ [Search]
+In the distance, there is something.
+Infinitesimal, but perceptible. A pinprick of light, a single ray, enough to draw the attention of your consciousness. But it presents a dilemma, it is foreign in you and your world. Approach it, and risk… something? Everything? Or ignore it, shun it, return to the void from which it is safe and swaddle in its nothingness.
+-
++ [The Darknes is Safe]
+Alas, it cannot be ignored. It will not go away. Small and imperceptibly as it is, it will not be ignored. It must be dealt with, else it will continue to itch and break the comforting emptiness as long as it exists.
+-
++ [Inspect the itch]
+	It is endlessly far away, but it does not matter as time holds no meaning. As you draw closer, one ray of light turns into two, then three, then many; It assaults your senses as you tentatively approach. Colors become perceptible, and then sound, as more and more things join the cacophony of sensations. You are almost there now, and it is almost unbearable in its energy. The amount of things spewing from it is unfathomable, perhaps it was a mistake to try and route whatever was producing this out. But there is no turning back now. 
++ [Look Closer]
+	As you arrive, you see the shape of what you have been pursuing. It is a window, unceremoniously spewing energy into your safe, quiet void. Through it, you can see a strangely finite world, full of color and moving things. It hurts to watch at first, but as you get used to the shock, it becomes endlessly fascinating. Things! They move, they make noise, they stop, they go, all on incomprehensible reasoning, it is entertaining, and for a time, you forget the void from whence you came. Time, which previously had to meaning or purpose, governs the things that move within this window, and you spend it willingly, watching and learning the strange cycles of the world. 
+-
 + [Watch]
+	At one point, you notice a circle of beings. It is like countless you have seen before. They circle around some wood, chanting. It is peculiar, and difficult to tell why it draws your attention so. Perhaps the sound they chant is pleasing, perhaps it is the most perfect circle you have ever seen, and yet you continue to watch. You see, from your time observing this world, that they are gaunt, and that the land around them is not as green as it once was. They look haggard but hopeful, and so they continue the chant. 
+-
++ [Observe]
+	As you listen, you feel… something. Something completely different from all the amazing sensations that this world gave you in the past. Something… new. It is deep inside, and it feels like a fire, just an ember, growing, and warming. You feel… powerful. But after a while, the chant begins to fade. You see empty eyes, and hopeless gazes.
+-
++ [point to a torch] As you point, you feel. The torch smolders, and none one notices, for they are too busy chanting. The wind picks up.
 + [Turn away] ->turn_away
 -
-They begin to circle around a pile of wood. They being to chant a sound. A name.
-+ [My name?]
-+ [Turn away] ->turn_away
--
-It could be, if you had a name. They continue their quaint display, chanting all the while.
-+ [Listen]
-+ [Turn away] ->turn_away
-- 
-The chanting continues, and although most of it is lost on you, you can hear the name, over and over. You feel... powerful. You feel... needed.
-+ [Listen]
-+ [Turn away] ->turn_away
-- 
-After a while, the chanting slows. Some stop completely. You see emtpy eyes, and hopeless gazes. The power you felt slowly begins to fade.
-+ [Listen] 
-    Eventually the chanting stops, and the gaunt people walk away, dissapointed. -> wonder
-+ [Point to a torch]
-    As you point, you feel. The torch smolders, and none one notices, for they are too busy chanting. The wind picks up.
-+ [Turn away] ->turn_away
--
-+ [Give up] 
-    You give up, it is not worth the time or effort. -> turn_away
 + [Focus]
 With the wind, the ember grows. One person notices, and shouts. They shout your name. As more people notice, you feel invigorated.
--
 + [Give up] 
-    You give up, it is not worth the time or effort. The embers fade, and eventually so too does the chanting. the gaunt people walk away, dissapointed. -> turn_away
+    You give up, it is not worth the time or effort. -> turn_away
+-
 + [Focus more]
 The torch roars to life, not even a gale could put it out now. People yell and the chanting grows louder, with the circle of people eventually dissolving into chaos. After a while, the chanting stops, and although the power lessens, you still hear whipsers of your name, like raindrops. One person picks up the torch, and the group journeys in the direction it represented.
->>
++ [Give up] 
+    You give up, it is not worth the time or effort. The embers fade, and eventually so too does the chanting. the gaunt people walk away, dissapointed. -> turn_away
+-> top_loop
 
 - (turn_away)
 You turn away from the noise of existence, and close your mind to reality.
-+ [wonder] ->wonder
++ [Wonder] ->wonder
 
 - (wonder)
 You ponder what's happened. What does it mean?
