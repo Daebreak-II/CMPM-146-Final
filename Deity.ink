@@ -27,7 +27,7 @@ In this void, there is no time, no matter, nothing.
 -> Age_5 ->
 -> Age_6 ->
 
-->Forgotten
+-> forgotten_end
 
 /*
  * Storylet setup
@@ -419,7 +419,7 @@ VAR age6SideStoryletMenuProps = (replayable, immediate)
  
 === side_storylet_poor_harvest_body ===
     Looking towards the river, I spot someone in the middle of a nearby field, tool in hand and planted solidly into the soil. A crowd seems to be gathering, and growing displeased at the sight. 
-*   Was there a conflict? [] No, there couldn't have been any. There's no visible tension between any of the parties, and yet, there is a heavy atmosphere emenating from the area.
+*   Was there a conflict? [] No, there couldn't have been any. There's no visible tension between any of the parties, and yet, there is a heavy atmosphere emanating from the area.
 -   The person in the field drops to their knees, while the mass, which has stopped accumulating new people continues to stare solemnly at the one in the field.
 *   [*Look to the field*]
     A closer look to the field shows that the crops have no food to bear. Withered away by pests and the elements, it will be much more difficult for the people to survive the following seasons.
@@ -446,10 +446,10 @@ VAR age6SideStoryletMenuProps = (replayable, immediate)
 -   Nothing seems to be amiss, everyone is going about their day as if everything is fine.
 *   [My existence.]
     Wait. The pull that drew me towards my followers is no longer there.
--   They no longer believe that I am there or my help.
+-   They no longer believe that I am there or that my help is of use.
 *   [*Start a nearby fire*]
 *   [*Cause some rainfall*]
--   It is too late. Try as I might, there is no more I can do for my people, or rather, these people. Just before, lifting a limb took nearly everything in me. There is no more to lift.
+-   But it is too late. Try as I might, there is no more I can do for my people, or rather, these people. Just before, lifting a limb took nearly everything in me. There is no more to lift.
 *   Everything is fading.
     Slowly but surely, I begin to lose any sense that I once had. The space I had taken up has begun to reclaim what I once was. My vision begins to darken, and the cold void turns into empty void.
 -   I wonder how they will survive without any more help. Have my actions gone unnoticed? Have I only hurt the people since their call for aid? It matters no more.
@@ -466,6 +466,16 @@ VAR age6SideStoryletMenuProps = (replayable, immediate)
 *   I am void.
 ->END
 
-== Forgotten ==
-you are forgotten
+== forgotten_end ==
+*   [My people...] Through many trials, I managed to keep my people alive, and their prayers have allowed me to continue to help them. Now, I am afloat above a group of those that are able to help themselves. Their kind are able to regulate and grow. And yet, 
+-*  [Their faith...] My strength falters. Cruel as it may be, the countless generations of followers that I have interacted with are still a recent memory. These most recent generations, though faithless, bear the mark of those that have struggled before them.
+-*  [My powers...] I suppose like the people I came to aid, many that have parted have left behind their legacy to the young.
+-*  {currentFaith > strong } Perhaps I could leave something behind. [] Though my powers are in their decline, I use what I can to leave my mark in the sky. That way, those that are lost after I am gone are able to see that it is not their time.
+*   But alas, here I am. [] With my little powers parallel to the declining faithful population, I spend all that I have left to retreat to a place where I won't be disturbed.
+-   With nearly all of my energy spent, I wait.
+*   And wait...
+    And wait, until the last of those that believe in me fade away.
+    I ponder whether there was anything to lengthen my stay, but it seems like everything eventually meets its end.
+-*  [It matters no more.] Though I and the last of the faithful fade away separately, I understand that I am no more.
+    I am void.
 ->END
