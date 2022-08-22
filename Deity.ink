@@ -173,7 +173,53 @@ VAR age1MainStoryletProps = oneShot
 ->DONE
 
 === Age_1_main_storylet_body ===
-something happened, and time has passed (add story content here)
+Time passes, and yet the fire at the center of the community burns on. They tend to it day and night, and discover it many uses
+
+- (Fire_benefits)
+* [Food]
+    The ability to rudimentarily cook food allows for increadible meals, 
+->Fire_benefits
+* [Light]
+    The light cast by the fire allows activities late into the night, increasing productivity and strengthening the community.
+-> Fire_benefits
+* [Warmth]
+    It keeps the terrible cold at bay, and for the first time ver, the people no longer have to move to a warmer climate to survive ->Fire_benefits
++ -> 
+    Slowly but surely, the community grows, and to their new members they tell the story of the first fire that was gifted to them, by you.
+-
+    
+    Until a disaster strikes. A once in a millenia storm ravages the peoples' settlement, a tragadey unlike any they had seen before. Howling wind buffets the weak structures of the village, and rain moving so fast it feels like hail buffets the people. It punches hulls in the roofs, rips the foundations of buildings apart, and soaks the poeple to the skin. It takes food stores, huts, lives, but last of all the fire that they had become so reliant upon. As if a living, breathing thing had been killed in parallel to the many lives that were lost in the savagery of the storm.
+    
+        What little is left of the food stores that survived the storm is now inedible without the fire to cook it. Without another fire, the village is sure to starve in the coming weeks.
+        
+        + [Attempt to ignite a House] -> Another_Fire
+        + [Cause a rockSlide] -> Flint
+        + [Inspire a follower] -> Bow
+
+
+- (Another_Fire)
+I point to a ruined house and focus, as I once did in the past when I first gave the gift of fire. 
+But nothing happens. No flame, no embers, no smoke; not even a spark. I re-double your efforts. Again, nothing happens. The storm as througouhly soaked every piece of wood, stick, and splinter for miles. Nothing will hold a spark. 
+Meanwhile the people gather their soaked, useless food, and the many dead that are scattered throughout the ruined scene. I hear them muttering, and see their anger and sadness. Perhaps they think this was my doing. I feel... Weaker. Smaller. It is not enjoyable. 
+~ currentPopulation--
++ [Wait]
+    As I observe the sorry scene in the coming months, more people do indeed die. It is a small famine, and all suffer for it. Their precious fire taken from them, they are forced to result to the old ways of gathering food which are not designed to sustain such a large community. They scavenge bland and barely edible plants, and hunt what small game remains in the area.
+        Some think the storm is a test, or a direct reprimand fom me. The faith of some is shaken.
+        Not everyone is devoted to reconstruction or hunting. I spy one enterprising person, who has taken matters into their own hands. One night, on a cold night, I see a small light shining from their abode, and a small snake of smoke trailing into the night sky. He has managed to create his own fire, with which the village rejoices around. With his advancement, there is no worry about the fire going out, for they have the power to make their own. But it is not mine, and many are aware of it.
+~currentFaith--
+-> conclusion
+
+- (Flint)
+    Concentrating,  I shake a small hill in the village, comprised of a peculiar rock. People cry out in suprised, but it is not nearly big enough to be dangerous. But while the hill falls, a miracle happens: the falling rocks spark, alighting a piece of grass. The suprised shouting is replaced by those of exitement as people wonder at the infant flame. But the method of its creation is not lost on one follower, who remembers the bright sparks he saw as the mound collapsed. However, while he can replicate the sparks, catching a flame is a whole other matter. It takes a week, but he manages to push through. With his advancement, there is no worry about the fire going out, for they have the power to make their own. Many praise him for his breakthrough, but many see it as direct intervention from me, aid for the disaster that they weathered. I can her them chant now, every night, and bask in its glow.
+~currentFaith++
+-> conclusion
+
+- (Bow)
+One follower, is different from the rest. They are constantly fiddling, creating, and breaking. Most look down on them, for they do not produce much of value, but they could be a useful tool. A slate to write upon. I see him now, fiddling, setting sticks against one another. It is anyones guess what he is trying to do, but it will have to do. I will a current of air to sweep through the room, a minature cyclone, which grabs a stick propped up against another, and spins it with an incredible force. Within seconds, the wood underneath is smoking, and embers flicker and float away from it. A bit heavy-handed perhaps, but necessary for the well-being of the village. It is not lost on him, and soon he is at it with his own hands, spinning wood against wood. It is not easy, but time goes by and eventually, he has uncovered my gift of the secret of fire. With his advancement, there is no worry about the fire going out, for they have the power to make their own. Many do not beleive his recounts of thee cyclone, but none can deny the usefullness of his discovery. 
+-> conclusion
+
+-(conclusion)
+With the gift of fire in hand and under their control, the people begin rebuild with renewed vigor. All is not lost, and soon the village is bigger than ever before. The raindrops of your name are more frequent, and I continue to survey what I have helped guide.
 {pass_time()}
 ->->
 
