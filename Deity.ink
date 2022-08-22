@@ -733,8 +733,8 @@ I believe that maybe the natural course of action is to allow the villagers to d
     ~currentPopulation--
 -->->
 
-== Harvest_Vestival ==
-The warm, sunny summer days have blessed the village with a bountiful harvest. For the last couple of days I have noticed the villages scrambling back and forth, bringing cartloads of vegitables and fruits to the village storage, No doubt to last the frozen winter months. On the last night of the harvest they gather in the town square to prepare for the harvest vestival in my honor. Over following days I see that each house is busy preparing meals and drinks for the celebration. Three days later on the equinox the full moon the village finally gathers and the clebration begins. I am elated to see my followers sing, dance, and be jolly for the plethora of goods I have helped produce. At the storke of midnight the entire village stands at the steps of town hall, the chieftain presents the largest pumpkin I have ever seen, it is almost the size of a cow.The village shouts out in joy and praises me for my blessing, they vow to raise the next year children as my followers.
+== Harvest_Festival ==
+The warm, sunny summer days have blessed the village with a bountiful harvest. For the last couple of days I have noticed the villages scrambling back and forth, bringing cartloads of vegitables and fruits to the village storage, No doubt to last the frozen winter months. On the last night of the harvest they gather in the town square to prepare for the harvest festival in my honor. Over following days I see that each house is busy preparing meals and drinks for the celebration. Three days later on the equinox the full moon the village finally gathers and the clebration begins. I am elated to see my followers sing, dance, and be jolly for the plethora of goods I have helped produce. At the storke of midnight the entire village stands at the steps of town hall, the chieftain presents the largest pumpkin I have ever seen, it is almost the size of a cow.The village shouts out in joy and praises me for my blessing, they vow to raise the next year's children as my followers.
 ~currentPopulation++
 -->->
 
