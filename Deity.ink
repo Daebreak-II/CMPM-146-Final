@@ -1,22 +1,98 @@
 // D E I T Y
 -> Beginning
+
 ==Beginning==
-It is empty. There is nothing perceivable.
-In this void, there is no time, no matter, nothing.
-    * Who am I?
-    There is no identity. The concept of "I" nor "you" exist in the void.
-    * Where am I?
-    There is no where. Nor "I". Just the void.
-//* \*Attempt to feel around for something*
+/*What is a god? An omnipotent, all powerful being, with total control over reality itself? Is it a singular being, or are there many, each governing a separate aspect of the world we perceive? Or is that just our minds, imagining something to our own likeness and understanding, which in reality would be very much beyond our control and comprehension of the world. What if it’s both?
+*/
++ [...]
+You
+Awake.
+There is nothing, no one, no thing, no self, not even concept in this void. 
+Listless it drifts, even though there is nothing which to drift on or by. 
+It is timeless, an eternity passes in a second, and a second takes all eternity, if such a thing did exist. 
 -
-    * [...] A flash of what can only be described as light illuminates the space.
-    Little lights quickly dot the area, and a body, previously shapeless, takes form.
++ [Drift]
+You drift/wait, but it is the same. It is the very same moment as the first, or if there was a difference, it is unperceivable.
 -
-    * [Me.] The body, a welcoming vessel, takes me in. and yet, there is still a pull.
-// Introduce all the visitable areas and the people
++ [List]
+And yet, you are still here. What does that mean? What is “you”?
+- 
++ [Think]
++ [Ponder]
+-
+You wonder, for an eternity, or a second; it matters not. Waiting for some epiphany, some action, some thought, some motion, anything. But it does not come. For there is nothing. 
++ [Search]
+Aware of your own existence, you begin to look outwards. Or inwards. There is no boundary between the self and everything that is. But you search anyways
+-
++ [Scour]
+There must be something, anything, besides you. You cannot be all that there is. And yet, you find nothing. There is nothing else. 
+-
++ [Concentrate]
+You focus, but what is there to focus on? Reality is empty, and so are you. But you are something, a concept or idea that can be understood, provide a substrate for thought. And so you focus on whatever it is you are. A glittering form appears from the void, shapeless and ever changing, but it is something. Like your mind, it is a concept to hold onto. It takes you in, as you do it; A body to call your own. Something, in this vast endlessness. A barrier between the self and every thing that is not. But as you play and marvel at your new form, it presents to you a stimulus. A sensation. A feeling. There is something out there, tickling your senses. Small, but salient.
+-
++ [Search]
+In the distance, there is something.
+Infinitesimal, but perceptible. A pinprick of light, a single ray, enough to draw the attention of your consciousness. But it presents a dilemma, it is foreign in you and your world. Approach it, and risk… something? Everything? Or ignore it, shun it, return to the void from which it is safe and swaddle in its nothingness.
+-
++ [The Darknes is Safe]
+Alas, it cannot be ignored. It will not go away. Small and imperceptibly as it is, it will not be ignored. It must be dealt with, else it will continue to itch and break the comforting emptiness as long as it exists.
+-
++ [Inspect the itch]
+	It is endlessly far away, but it does not matter as time holds no meaning. As you draw closer, one ray of light turns into two, then three, then many; It assaults your senses as you tentatively approach. Colors become perceptible, and then sound, as more and more things join the cacophony of sensations. You are almost there now, and it is almost unbearable in its energy. The amount of things spewing from it is unfathomable, perhaps it was a mistake to try and route whatever was producing this out. But there is no turning back now. 
+-
++ [Look Closer]
+	As you arrive, you see the shape of what you have been pursuing. It is a window, unceremoniously spewing energy into your safe, quiet void. Through it, you can see a strangely finite world, full of color and moving things. It hurts to watch at first, but as you get used to the shock, it becomes endlessly fascinating. Things! They move, they make noise, they stop, they go, all on incomprehensible reasoning, it is entertaining, and for a time, you forget the void from whence you came. Time, which previously had to meaning or purpose, governs the things that move within this window, and you spend it willingly, watching and learning the strange cycles of the world. 
+-
++ [Watch]
+	At one point, you notice a circle of beings. It is like countless you have seen before. They circle around some wood, chanting. It is peculiar, and difficult to tell why it draws your attention so. Perhaps the sound they chant is pleasing, perhaps it is the most perfect circle you have ever seen, and yet you continue to watch. You see, from your time observing this world, that they are gaunt, and that the land around them is not as green as it once was. They look haggard but hopeful, and so they continue the chant. 
+-
++ [Observe]
+	As you listen, you feel… something. Something completely different from all the amazing sensations that this world gave you in the past. Something… new. It is deep inside, and it feels like a fire, just an ember, growing, and warming. You feel… powerful. But after a while, the chant begins to fade. You see empty eyes, and hopeless gazes.
+-
++ [point to a torch] As you point, you feel. The torch smolders, and none one notices, for they are too busy chanting. The wind picks up.
++ [Turn away] ->turn_away
+-
++ [Focus]
+With the wind, the ember grows. One person notices, and shouts. They shout your name. As more people notice, you feel invigorated.
++ [Give up] 
+    You give up, it is not worth the time or effort. -> turn_away
+-
++ [Focus more]
+The torch roars to life, not even a gale could put it out now. People yell and the chanting grows louder, with the circle of people eventually dissolving into chaos. After a while, the chanting stops, and although the power lessens, you still hear whipsers of your name, like raindrops. One person picks up the torch, and the group journeys in the direction it represented.
++ [Give up] 
+    You give up, it is not worth the time or effort. The embers fade, and eventually so too does the chanting. the gaunt people walk away, dissapointed. -> turn_away
+-
+-> top_loop
 
-- -> top_loop
+- (turn_away)
+You turn away from the noise of existence, and close your mind to reality.
++ [Wonder] ->wonder
 
+- (wonder)
+You ponder what's happened. What does it mean?
++ [slumber] ->slumber
+
+- (slumber)
+You enter a deep sleep, and fade into the quiet darkness.
++ [...] ->Beginning
+
+== Fire_Age ==
+Time passes, and yet the fire at the center of the community burns on. They tend to it day and night, and discover it many uses
+
+- (Fire_benefits)
+* [Food]
+    The abbility to rudimentarily cook food allows for increadible meals, 
+->Fire_benefits
+* [Light]
+    The light cast by the fire allows activities late into the night, increasing productivity and strengthening the community.
+-> Fire_benefits
+* [Warmth]
+    It keeps the terrible cold at bay, and for the first time ver, the people no longer have to move to a warmer climate to survive ->Fire_benefits
++ -> 
+    Slowly but surely, the community grows, and to their new members they tell the story of the first fire that was gifted to them, by you.
+
+
+-> top_loop
 
 
 === top_loop ===
@@ -444,6 +520,67 @@ VAR age6SideStoryletMenuProps = (replayable, immediate)
 +   [option 3] {pass_time()}
 
 - ->->
+
+//SIDE STORYLETS
+//-> Offering
+== Offering ==
+VAR OddsToAddFollowers = 0
+VAR OddsToLoseFollowers = 0
+VAR TotalOdds = 0
+
+The smell of delicious food and exquisite fruits catch my attention. But where could it be coming from? 
+
++ Investigate
+It seems that the smell is coming from the top of the mountain. I begin walking and eventually reach the mountain top, where a shrine resides. 
+    -> Investigation
+    
+== Investigation ==
+* Accept Offering
+I bask in the aroma of the shrine, and indulge myself in the delicious food provided from my followers. I am accepting of this kind gesture from my followers. 
+    -> Response
+* Ignore Offering
+Upon reaching the shrine, a pungent smell filled my nostrils. It seems that my followers filled my shrine with their rotten and uneatable food. I immediately leave the area. 
+    ~OddsToLoseFollowers += 5
+    ->END
+    
+== Response ==
+* Respond with kindness
+        ~OddsToAddFollowers += 5
+        //STUFFS
+* No response
+I have provided for my followers for eternities and all they could provide me with is some snacks and fruits? Unbelievable. 
+        ~OddsToLoseFollowers += 5
+        //STUFFS
+
+
+-
+->END
+//-> Miracle
+== Miracle ==
+
+Throughout my entire dynasty, the oceans and lakes were filled with water, which provided a large abundance of natural resources such as water. My followers benefited from this large water supply everyday, mainly using it to cultivate their crops. The oceans and lakes have been the lifeline of my followers for eternities, but it seems that the lakes are drying up, and their water supply slowly but surely disappearing. 
+
+I could help them.
+
+Or, I could make things more difficult for them. Punishment does indeed build character. 
+
+* Create Miracle
+I harness all of my energy, and use my powers to create a massive storm which lasts for several days. The storm clouds shadow the planet for a few days, replenishing the declining supply of water, and restoring faith amongst my followers. 
+    
+*Do Nothing
+My followers have abused my kindness for years. I leave them to fend for themselves. 
+
+    
+* Create Disaster
+I harness all of my energy, and use my powers to increase the power of the Sun by ten fold. Severe heatwaves plague the planet, and crops cannot grow as they simply turn to fire. The entire planet turns to a desert-like environment, with water becoming one of the scarcest and most expensive resources. 
+
+I can see my followers praying everyday, hoping for a miracle.
+
+*   *   Respond to prayers
+    I harness all of my energy, and use my powers to revert the power of the Sun. In addition, I create a massive storm which lasts for several days. The storm clouds shadow the planet for a few days, replenishing the water supply and restoring faith amongst my followers. 
+*   *Ignore prayers
+    My followers have abused my kindness for years. I leave them to fend for themselves. 
+-   ->->
  
 === side_storylet_poor_harvest_body ===
     Looking towards the river, I spot someone in the middle of a nearby field, tool in hand and planted solidly into the soil. A crowd seems to be gathering, and growing displeased at the sight. 
