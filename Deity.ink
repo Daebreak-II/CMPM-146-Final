@@ -147,7 +147,7 @@ Age 1
 - (loop)
     { currentPopulation ? gone: -> no_population_end }
     { currentFaith ? none: -> no_faith_end }
-    It has been {currentTime} {currentTime ? one: season | seasons} since (something)
+    It has been {currentTime} {currentTime ? one: season | seasons} since I have met these people.
     {currentTime ? four:
         -> Age_1_end_event ->
         ->->
@@ -225,6 +225,7 @@ VAR age1SideStoryletMenuProps = (replayable, immediate)
 *   [*Check out the buildings*] Since I've last had a look at the settlement, it looks like it's now set in stone that they will be living here. The material used for the buildings have changed to be much more solid.
 *   [*Have a look at the food*] It looks like they have a building just to store all the food they've grown now. The fields have gifted my followers with an abundance of food. There's so much food that they even feed other animals too.
 -   I've managed to keep them alive, and they still believe in me. I'm beginning to grow attached to them.
+*   [Quite entrancing, this lot.]
 {pass_time()}
 ->->
 
@@ -288,11 +289,11 @@ VAR age2SideStoryletMenuProps = (replayable, immediate)
 - ->->
 
 === Age_3 ===
-Age 3
 - (loop)
     { currentPopulation ? gone: -> no_population_end }
     { currentFaith ? none: -> no_faith_end }
-    It has been {currentTime} {currentTime ? one: season | seasons} since (something)
+    It has been at least {currentTime} {currentTime ? one: century | centuries} since the advent of agriculture.
+    {age_3_flavor()}
     {currentTime ? four:
         -> Age_3_end_event ->
         ->->
@@ -301,6 +302,14 @@ Age 3
     <- Age_3_side_storylet_menu_description(->loop)
     <- check_follower_status(->loop)
     ->DONE
+
+== function age_3_flavor ==
+{   not Age_3_main_storylet_body:
+    {~ There are several craftsmen, creating tools of stone for the people under the shade of a tree. | The snap of a tool rings throughout the settlement. I feel bad for them. | Children run all about the settlement, playing and chasing one another with sticks.}
+-   else:
+    {~ There are several craftsmen, sharpening dulled tools. The sounds drive nearby people away | The snap of a log being split in two is quite nice. The people will stay warm tonight. | Children run all about the settlement, playing and chasing one another with sticks.}
+}
+~return
 
 === Age_3_end_event ===
     With the people discovering metal from my experimentation, They've created their own. Soon afterwards, mixtures of metal were tested, and the population exploded. With rapid growth, I find myself with new faces that can provide more power.
