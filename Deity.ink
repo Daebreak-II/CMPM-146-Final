@@ -113,7 +113,7 @@ LIST replayableFrequency = immediate, threeTurns, fiveTurns
 
 // Create list to keep track of time.
 LIST time = one, two, three, four
-VAR currentTime = one
+VAR currentTime = two
 // Function progresses time forward, or resets currentTime to morning if currently night
 == function pass_time ==
 { 
@@ -226,7 +226,7 @@ With the gift of fire in hand and under their control, the people begin rebuild 
 VAR age1SideStoryletMenuProps = (replayable, immediate)
 === Age_1_side_storylet_menu_description (->ret) ===
 { StoryletPropTest(age1SideStoryletMenuProps, Age_1_side_storylet_menu, ->Age_1_side_storylet_menu) && ( not(currentTime ? three) && not Age_1_main_storylet_body) || (currentTime <= three && Age_1_main_storylet_body):
-    + [Age 1 side storylet option]
+    + [Have a look at these lands]
       -> Age_1_side_storylet_menu ->
 
     -> ret
@@ -235,14 +235,13 @@ VAR age1SideStoryletMenuProps = (replayable, immediate)
 
 === Age_1_side_storylet_menu ===
 // Tunnel to various storylets, use {passTime()} at the end of the tunnel before returning
-+   [option 1] {pass_time()}
-+   [option 2] {pass_time()}
-+   [option 3] {pass_time()}
+*   [option 1] {pass_time()}
+*   [A shrine in the mountains?] ->side_storylet_shrine->
+
 
 - ->->
 
 === Age_2 ===
-// Agricultural age (MOVE IF WRONG)
 - (loop)
     { currentPopulation ? gone: -> no_population_end }
     { currentFaith ? none: -> no_faith_end }
@@ -279,7 +278,7 @@ VAR age1SideStoryletMenuProps = (replayable, immediate)
 VAR age2MainStoryletProps = oneShot
 === Age_2_main_storylet_description (->ret) ===
 { StoryletPropTest(age2MainStoryletProps, Age_2_main_storylet_body, ->Age_2_main_storylet_body):
-    + [Age 2 main storylet option]
+    + [The people seem to be preparing something.]
       -> Age_2_main_storylet_body ->
 
     -> ret
@@ -319,7 +318,7 @@ VAR age2MainStoryletProps = oneShot
 VAR age2SideStoryletMenuProps = (replayable, immediate)
 === Age_2_side_storylet_menu_description (->ret) ===
 { StoryletPropTest(age2SideStoryletMenuProps, Age_2_side_storylet_menu, ->Age_2_side_storylet_menu) && ( not(currentTime ? three) && not Age_2_main_storylet_body) || (currentTime <= three && Age_2_main_storylet_body):
-    + [Age 2 side storylet option]
+    + [Let's have a look around.]
       -> Age_2_side_storylet_menu ->
 
     -> ret
@@ -328,9 +327,9 @@ VAR age2SideStoryletMenuProps = (replayable, immediate)
 
 === Age_2_side_storylet_menu ===
 // Tunnel to various storylets, use {passTime()} at the end of the tunnel before returning
-+   [option 1] ->side_storylet_poor_harvest_body->
-+   [option 2] {pass_time()}
-+   [option 3] {pass_time()}
+*   [A commotion in the field] ->side_storylet_poor_harvest_body->
+*   [The lakes...] ->side_storylet_miracle->
+*   [option 3] {pass_time()}
 
 - ->->
 
@@ -367,7 +366,7 @@ VAR age2SideStoryletMenuProps = (replayable, immediate)
 VAR age3MainStoryletProps = oneShot
 === Age_3_main_storylet_description (->ret) ===
 { StoryletPropTest(age3MainStoryletProps, Age_3_main_storylet_body, ->Age_3_main_storylet_body):
-    + [Age 3 main storylet option]
+    + [A lone craftsman, working by the fire]
       -> Age_3_main_storylet_body ->
 
     -> ret
@@ -398,61 +397,52 @@ VAR age3SideStoryletMenuProps = (replayable, immediate)
 
 === Age_3_side_storylet_menu ===
 // Tunnel to various storylets, use {passTime()} at the end of the tunnel before returning
-+   [option 1] ->side_storylet_bear_attack->
-+   [option 2] {pass_time()}
-+   [option 3] {pass_time()}
+*   [Another hunting trip?] ->side_storylet_bear_attack->
+*   [option 2] {pass_time()}
+*   [option 3] {pass_time()}
 
 - ->->
 
 //SIDE STORYLETS
 //-> Shrine
-== Shrine ==
+== side_storylet_shrine ==
+As I survey the vast expanse, a large statue built atop of the tallest mountain catches my eye. I assume some people responsible for my arrival climbed these mountains to carve a statue of what they believe I am. There is also some food placed at the foot of the statue.
 
-As I survey my vast kingdom, a large statue built atop of the tallest mountain in my kingdom catches my eye. Upon further investigation, I realize that this large statue is actually a statue of myself, and must have been built by my followers, as an offering. 
-
-I could accept their offering. Or reject it. 
-
-    -> Offering
+* What a kind offering!
+The relationship I have with my followers is a two way path. They have shown that they worship me, while I provide them with everything they need. I appreciate this kind gesture created by my followers. In return, I create a small fire for them to bear with the bitter cold.  
+~   currentFaith++
+* They need this food to survive.
+Impressive as it is that they dedicated time to creating this, they must be weary. I'll leave the food for them to survive, but that will leave my actions unnoticed.
+~   currentPopulation++
+- {pass_time()}
+->->
     
-== Offering ==
-* Accept Offering
-The relationship I have with my followers is a two way street. They worship me and are loyal to me, while I provide them with everything they need. I appreciate this kind gesture created by my followers and reward them with _____ (Depending on age)
-
-    -> Response
-* Reject Offering
-I have provided my followers with everything and sustained their lives for eternities, and all they could do is build a statue for me? What ever happened to sacrafices? Unbelievable. 
-    ->END
-    
-== Response ==
-My followers appreciate my acceptance of their shrine dedicated to me, and spread news around the world of our amazing kingdomn. 
--
-->END
 //-> Miracle
-== Miracle ==
+== side_storylet_miracle ==
+    Since I have met these people, the rivers and lakes were filled with water, which provided myriad natural resources. They have benefited from this large water supply everyday. The oceans and lakes have been the lifeline of my followers for eternities, but it seems that the lakes are drying up, their water supply slowly but surely disappearing. 
+    I could try to help them.
+    Or, I could have them challenge the environment. There is strength in survival. 
 
-Throughout my entire dynasty, the oceans and lakes were filled with water, which provided a large abundance of natural resources such as water. My followers benefited from this large water supply everyday, mainly using it to cultivate their crops. The oceans and lakes have been the lifeline of my followers for eternities, but it seems that the lakes are drying up, and their water supply slowly but surely disappearing. 
-
-I could help them.
-
-Or, I could make things more difficult for them. Punishment does indeed build character. 
-
-* Create Miracle
-I harness all of my energy, and use my powers to create a massive storm which lasts for several days. The storm clouds shadow the planet for a few days, replenishing the declining supply of water, and restoring faith amongst my followers. 
+* [*Aid the people*]
+I harness all of my energy, and use my powers to create monsoons, bringing large quantities of nourishment back to the lands. The storm clouds shadow the planet for a few days, replenishing the declining supply of water, and restoring faith amongst my followers.
+~   currentFaith++
     
-*Do Nothing
-My followers have abused my kindness for years. I leave them to fend for themselves. 
-
+* [*Show some concern for the people*]
+I can't be bothered to use that much energy to help them. I create some rains, but they just as they arrive, they clear up into blue skies. I hope the people aren't too upset about that.
+~   currentFaith--
     
-* Create Disaster
-I harness all of my energy, and use my powers to increase the power of the Sun by ten fold. Severe heatwaves plague the planet, and crops cannot grow as they simply turn to fire. The entire planet turns to a desert-like environment, with water becoming one of the scarcest and most expensive resources. 
-
+* [*Challenge the people*]
+Though the bodies of water are disappearing, I'm sure they'll come back as the rainy season returns.
+Checking back on the people in a few days, however, I sense that I have made a mistake.
 I can see my followers praying everyday, hoping for a miracle.
 
-*   *   Respond to prayers
-    I harness all of my energy, and use my powers to revert the power of the Sun. In addition, I create a massive storm which lasts for several days. The storm clouds shadow the planet for a few days, replenishing the water supply and restoring faith amongst my followers. 
-*   *Ignore prayers
-    My followers have abused my kindness for years. I leave them to fend for themselves. 
--   ->->
+*   *   I should really help them out.
+    Using a great deal of energy, I create a rainstorm that steadily restores the ecosystem to its original state. This should be good enough to keep them going.
+*   *   [*Keep pushing them on*]
+    I don't want to create a group of people too reliant on my powers. What if I'm deep in slumber and they need my help? Though they may lose a few people, those that survive will be much stronger.
+    ~   currentPopulation--
+-   {pass_time()}
+->->
  
 === side_storylet_poor_harvest_body ===
 // Intended for Age 2
