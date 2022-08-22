@@ -486,6 +486,138 @@ I can see my followers praying everyday, hoping for a miracle.
 -
 {pass_time()}
 ->->
+
+== Raid_By_Rival_Tribe  ==
+
+// ~OddsToAddFollowers = 0
+// ~OddsToLoseFollowers = 0
+// ~TotalOdds = 0
+
+- I bask in the worship of my follower on such a serene day, when out of the corner of my eye I spot are large cloud of dust in the distance. I pay it no mind and continue to enjoy in the revelry of my followers. Moments later the cloud grows closer and larger.
+
+*[It could be a storm but the skies look clear.]->Closer->And_Closer->Right_On_Top->
+
+-  Like a bolt of lightning the horde quickly deceneds upon the village. A sudden crash of arms and horses slams agaisnts the weak and crumbling gates. I see the faces of all my people pass in front oy my eyes, like a sick and twisted forteling of the events to come. //A wave emotions passes of my body
+* Surronded by all the chaos I am suddenly drawn to the prayer of chieftain who pleads that I aid the village in its time of need. ->Heed_Prayer->
+
+- the harrowing ordeal is now over
+->->
+
+== Heed_Prayer ==
+The constant druming of shouting, cries, and metal clanking. Along with hundreds of prayers screaming in my mind mean I can barely concentrate on the stuation.
+*{not Ignore}[The clan can figure this out]->Ignore
+
+*{Ignore}[Half the village remains, but it seems most of the fighting has died down. I should let the rest play out]->IgnoreChoice
+
+*[aid the village]->Aid
+
+- ->->
+
+== Ignore ==
+The needs of petty humans is below one that so omnipotent and magnanamous as me. They should learn that simple becasue they are in danger ther should not always rely on my support.
+//followers -= (1/2)*followers
+->Heed_Prayer
+
+== IgnoreChoice ==
+The old village chieftain lays cold and lifeless in the village square, the others remaining enslaved and in shock of the events that have passed. However out of the sadness I hear a faint prayer from a loyal girl. She pleades that I save them from this torment. I wonder if all this could have been avoided, yet I know I can still save them.
+
+    * Should I free them from this torment ->Raid_By_Rival_Tribe
+    * ...Or can these pitiful vilagers rise above the moment.->no_population_end// straight to lose all
+== Aid ==
+I must do what right of me and offer what help I can give. However I ask myself how I should handel this as a vengeful deity or as a benevolent god.
+
+    * [Vengeful]
+        // ~OddsToLoseFollowers -= 5
+    * [Benevolent]
+        // ~OddsToAddFollowers += 10
+
+-The entire ordeal is over but by looking at the chieftain I can tell there is so much emotions to unpack
+
+- ->->
+
+ == Closer ==
+ The cloud has expanded and there is a visible steady shake on the earth. However it is hard to tell if the rumbling is from your followers or off in the distance.
+ ->->
+
+ == And_Closer ==
+ Minuets pass and the cloud grow ever closer and larger the low rumbling has turned into a strong hurrican of vibrations and noise. I can finally discern the sound of rumbling from the dancing of my people. I ponder if I should warn the chieftain of the upcoming calamity or not.
+ * [Warn?!]
+    // ~OddsToAddFollowers += 5
+    -> WarnChief ->
+ * [Not?]
+    // ~OddsToLoseFollowers +=5
+ - ->->
+
+ == WarnChief ==
+ I warn the cheif that there may be trouble in the distance. His gaze and demeanor look to be in disbelief. However I soon notice that he comprises himself and swiftly turns to the group. Ushering those that can assist to tend to weak and unable to barricade themsleves.
+
+ ->->
+ ==Right_On_Top ==
+ like a shadow in the night a horde of raiders suddenly appears in the distance.
+ * {WarnChief} The chief thanks you for your warning and advises those that remain to gather up arms.
+    // ~OddsToAddFollowers += 5
+ * {not WarnChief} what lays before me it utter chaos, the once proud chief is visible shaking while uttering warnings and commands to his people. The once festive and joyous music has turned to cries of pain, fear, and anguish. I notice a lone girl crying for her mother while holding an idol of me. I wonder if will ever see her again...
+    // ~OddsToLoseFollowers -= 5
+ - ->->
+
+== Natural_Disaster ==
+//~OddsToAddFollowers = 0
+//~OddsToLoseFollowers = 0
+//~TotalOdds = 0
+
+- So far the village a enjoyed a warm and sunny, with a cool refreshing breeze to liven up the villagers as the meander throught out the day fulfilling various daily tasks. Later that day the sweet waft of morning dew has shifted towards a thich palpable ozone, which cound mean only one thing, a storm. The stormfront makes it way down the plains and by all accounts seem ordinary, however as it reaches the village it turns violent. In my great omnipotence I can see that this change in weather is due to major weather climates coliding with each other. What was once a simple storm has turned into a great hurricane violently twisting and contorting the air to its will. Nothing in it path survives anything smaller then a cow is thrown great distances. Despite the cruel nature my loyal followers pray that I may aid them in their time of need. Should I...
+
+    *[Aid them] ->Aid_Hurricane->
+    
+    *[Ignore thier prayers]->Ignore_Hurricane->
+    
+    *[try my might agaisnt the hurricane]->Fight_Hurricane
+
+- All said and done nothing pain me more then seeing my followers in peril. That being said there comes a time when every bird flys the coop.
+->->
+
+== Aid_Hurricane ==
+* I pity my followers I wish that they could have the power to support themselves but then what would be the point of having me, I do need their addoration. Feeling the fatherly need to protect my village I use what little magic i have to brace each house to survive the onslought of mayhem outside thier weak an fragile houses. Once the hurricane has passed I notice life return to the village, as if mice emerege from thier burrows once a predator has left. I hear the praise of the village echo throught the town with several new voices.
+    ~currentPopulation++
+- ->->
+
+== Ignore_Hurricane ==
+* As all parents must face there are certain teaching moments in the up bringing of children,this is no exception. In order to teach my followers to rely on themselves I must step back in thier most pivital of moments so that they can adore me greater. ->Lose_Hurricane
+-->->
+
+== Fight_Hurricane ==
+* I think to myself what better way to earn the respect and adoration of my followers then to literally blow away the hurricane. I puff my chest and inhale then quickly let out a torrent of wind. ->Lose_Hurricane
+
+- ->->
+== Lose_Hurricane ==
+//~OddsToLoseFollowers = SEED_RANDOM(5)
+
+* {Ignore_Hurricane}[The hurricane has passed and thankfully only a handful of followers were lost, I hear cries of joy in the streets those that have survived are excited to survive the yet most of it seems to be ]
+*{Fight_Hurricane}[The torrent of wind I let out is so strong that it decimates some of the surrounding houses in the blink of an eye, meaning those that were inside are no more. Fortunately or rather unfortunately, the gust pushed the hurricane back but also created a tornado to appear, tearing away all that it could in its path. I have lost more followers then I anticipated, on top of that instead of hearing tears of rejoice, I hear toment and disdain for my actions.] 
+
+- ->->
+
+== Rival_God ==
+It seems like any other day when in the market I notice a commotion, from what I can tell there appears to be a newcomer dismissing my own exsistence. How could such a weak creature disregard my own magnificance, such impertinence. Forcing myself to calm down and assess the situation I notice his clothes and those of his followers, they all wear disheveled robes colored green and yellow, I've seen these colors before they belong to another so called god that has always vied for followers. However this time they have gone out of their way to enter your territory using proxies. As I see it there is only three ways to curb this blatant encroachment of that odious demi-god, gozar. And that is to either order the village to --
+
+    *[violently push back on the teachings of gozar and his followers]-> Civil_War->
+    *[peacefully escort and banish gozar's followers]-> Banish_Gozar->
+    *[Respectably allow the followers continue thier teaching]->Let_Gozar_Stay->
+-
+
+- ->->
+== Civil_War ==
+My voice echos throught the village and the villagers comply. I notice that all the villagers decend on the town square, weapons in hand. Moreover, I see that Gozar's followers are visibly shaking, fully aware of thier impending doom. When the villagers reach the newcomers yelling and lunges dramtically increases the tension. Althought the newcomers are outnumbered and afraid there is a discernible confidence in thier stance. In an instance I notice that one of my followers quickly pounces at one of the newcomers, suddenly loud screams followed by silence are that remain. The newcomers stands over the body with a sneer clenching a bloodied short sword in his hands. This noticiable enrages the villages and skrimish ensues. Within minuets the racket has died down and the bodies of several people lay motionless in the square. This will undoubtedly impart to Gozar that this village is off limits as long as I remain. Although the problem is solved I am saddened to learn of the passing of some of my followers. 
+    ~currentPopulation--
+- ->->
+== Banish_Gozar ==
+My voice echos throught the village and the villagers comply. The town chieftain and his armed guards cautiously but intently walk down the streets towards the village square. As the cheiftain arrives at the square an akward silence fills the square, the main priest seems upset of the arrival of the chieftain and both men begin to argue. Suddenly one of the rival apostles runs down the steps and makes a swipe at the chieftain with a hidden dagger, only to be quickly impaled on the tip of spear by the chieftain's bodyguards. The rival priest and his remaining cohorts step back in disbelief. Knowing that the situation is not in thier favor the rival worshippers lay down thier arms and obey the warnings and quietly leave. Althought the situation ended peacefully the teaching of Gozar of done thier damage and some of the villagers leave with the riavl worshippers.
+    ~currentPopulation--
+-->->
+== Let_Gozar_Stay
+I believe that maybe the natural course of action is to allow the villagers to dispel the teaching of Gozar. It only makes sense seeing how Gozar demands human sacrifices to appease him. Knowing this the villages will finally learn that my own benevolence is far greater for the prosperity of the village and its inhabitants. As time passes it plays out as I foretold with many of the villagers downright loathing the teachings and the filty of Gozar. Dispite the dissipation of Gozar some of my followers have changed alligence and leave the village in the dark never to return.I vow this will be the last time I allow the pestilence of another god sway my people. 
+    ~currentPopulation--
+-->->
  
 === no_faith_end ===
 // Note: Maybe write different content based on different population sizes (tiny/any in between/vast)
