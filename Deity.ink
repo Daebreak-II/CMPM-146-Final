@@ -1,5 +1,4 @@
 // D E I T Y
-// -> Fire_Age
 -> Beginning
 
 ==Beginning==
@@ -559,26 +558,21 @@ Or, I could make things more difficult for them. Punishment does indeed build ch
 
 * Create Miracle
 I harness all of my energy, and use my powers to create a massive storm which lasts for several days. The storm clouds shadow the planet for a few days, replenishing the declining supply of water, and restoring faith amongst my followers. 
-    ->END
     
 *Do Nothing
 My followers have abused my kindness for years. I leave them to fend for themselves. 
-    ->END
+
     
 * Create Disaster
 I harness all of my energy, and use my powers to increase the power of the Sun by ten fold. Severe heatwaves plague the planet, and crops cannot grow as they simply turn to fire. The entire planet turns to a desert-like environment, with water becoming one of the scarcest and most expensive resources. 
 
 I can see my followers praying everyday, hoping for a miracle.
-    ->AID
 
-== AID == 
-    * Respond to prayers
+*   *   Respond to prayers
     I harness all of my energy, and use my powers to revert the power of the Sun. In addition, I create a massive storm which lasts for several days. The storm clouds shadow the planet for a few days, replenishing the water supply and restoring faith amongst my followers. 
-    ->END
-    *Ignore prayers
+*   *Ignore prayers
     My followers have abused my kindness for years. I leave them to fend for themselves. 
--
-->END
+-   ->->
  
 === side_storylet_poor_harvest_body ===
     Looking towards the river, I spot someone in the middle of a nearby field, tool in hand and planted solidly into the soil. A crowd seems to be gathering, and growing displeased at the sight. 
