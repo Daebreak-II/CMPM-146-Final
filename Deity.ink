@@ -14,7 +14,7 @@ The relationship I have with my followers is a two way street. They worship me a
 
     -> Response
 * Reject Offering
-I have provided my followers with everything and sustained their lives for eternities, and all they could do is build a statue for me? What ever happened to sacrafices? Unbelievable. 
+I have provided my followers with everything and sustained their lives for eternities, and all they could do is build a statue for me? What ever happened to sacrafices? Unbelievable.  
     ->END
     
 == Response ==
@@ -52,6 +52,25 @@ I can see my followers praying everyday, hoping for a miracle.
     ->END
     *Ignore prayers
     My followers have abused my kindness for years. I leave them to fend for themselves. 
+
+-
+->END
+
+->MIDSUMMER
+== MIDSUMMER ==
+Every single year, my followers hold a drinking festival known as the Midsummer festival. People from all over the world gather to celebrate the upcoming summer months. 
+
+But should I even provide my followers with Summer? I could destroy the Sun for all I care, leaving my followers with an endless Winter. 
+
+
+* Destroy Sun
+I grab the Sun with my bare hands, and throw it like a baseball as far as I can, sending it to a universe thirty billion years away. My followers, as well as anyone living on the planet, instantly die from the freezing climate. 
+-> END
+
+* Provide Summer
+My followers rejoice, and faith is restored amongst them. 
+->END
+
 
 -
 ->END
