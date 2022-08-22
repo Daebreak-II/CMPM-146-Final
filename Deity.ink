@@ -602,9 +602,10 @@ I use my powers to increase the power of the Sun, causing severe heatwaves and e
 
 
 == Raid_By_Rival_Tribe  ==
-VAR OddsToAddFollowers = 0
-VAR OddsToLoseFollowers = 0
-VAR TotalOdds = 0
+
+~OddsToAddFollowers = 0
+~OddsToLoseFollowers = 0
+~TotalOdds = 0
 
 - I bask in the worship of my follower on such a serene day, when out of the corner of my eye I spot are large cloud of dust in the distance. I pay it no mind and continue to enjoy in the revelry of my followers. Moments later the cloud grows closer and larger.
 
@@ -614,7 +615,7 @@ VAR TotalOdds = 0
 * Surronded by all the chaos I am suddenly drawn to the prayer of chieftain who pleads that I aid the village in its time of need. ->Heed_Prayer->
 
 - the harrowing ordeal is now over
-->END // send back to day
+->->
 
 == Heed_Prayer ==
 The constant druming of shouting, cries, and metal clanking. Along with hundreds of prayers screaming in my mind mean I can barely concentrate on the stuation.
@@ -627,7 +628,7 @@ The constant druming of shouting, cries, and metal clanking. Along with hundreds
 - ->->
 
 == Ignore ==
-The need of petty humans is beneath me.
+The needs of petty humans is below one that so omnipotent and magnanamous as me. They should learn that simple becasue they are in danger ther should not always rely on my support.
 //followers -= (1/2)*followers
 ->Heed_Prayer
 
@@ -635,7 +636,7 @@ The need of petty humans is beneath me.
 The old village chieftain lays cold and lifeless in the village square, the others remaining enslaved and in shock of the events that have passed. However out of the sadness I hear a faint prayer from a loyal girl. She pleades that I save them from this torment. I wonder if all this could have been avoided, yet I know I can still save them.
 
     * Should I free them from this torment ->Raid_By_Rival_Tribe
-    * ...Or can these pitiful vilagers rise above the moment.->ALLDead// straight to lose all
+    * ...Or can these pitiful vilagers rise above the moment.->no_population_end// straight to lose all
 == Aid ==
 I must do what right of me and offer what help I can give. However I ask myself how I should handel this as a vengeful deity or as a benevolent god.
 
@@ -668,14 +669,42 @@ I must do what right of me and offer what help I can give. However I ask myself 
  ==Right_On_Top ==
  like a shadow in the night a horde of raiders suddenly appears in the distance.
  * {WarnChief} The chief thanks you for your warning and advises those that remain to gather up arms.
-    ~OddsToAddFollowers += Day5
+    ~OddsToAddFollowers += 5
  * {not WarnChief} what lays before me it utter chaos, the once proud chief is visible shaking while uttering warnings and commands to his people. The once festive and joyous music has turned to cries of pain, fear, and anguish. I notice a lone girl crying for her mother while holding an idol of me. I wonder if will ever see her again...
     ~OddsToLoseFollowers -= 5
  - ->->
 
+== Natural_Disaster ==
+~OddsToAddFollowers = 0
+~OddsToLoseFollowers = 0
+~TotalOdds = 0
 
+- So far the village a enjoyed a warm and sunny, with a cool refreshing breeze to liven up the villagers as the meander throught out the day fulfilling various daily tasks. Later that day the sweet waft of morning dew has shifted towards a thich palpable ozone, which cound mean only one thing, a storm. The stormfront makes it way down the plains and by all accounts seem ordinary, however as it reaches the village it turns violent. In my great omnipotence I can see that this change in weather is due to major weather climates coliding with each other. What was once a simple storm has turned into a great hurricane violently twisting and contorting the air to its will. Nothing in it path survives anything smaller then a cow is thrown great distances. Despite the cruel nature my loyal followers pray that I may aid them in their time of need. Should I...
+
+    *[Aid them] ->Aid_Hurricane->
+    
+    *[Ignore thier prayers]->Ignore_Hurricane->
+    
+    *[try my might agaisnt the hurricane]
+
+-
+->DONE
+
+== Aid_Hurricane ==
+I pity my followers I wish that they could have the power to support themselves but then what would be the point of having me, I do need their addoration. Feeling the fatherly need to protect my village I use what little magic i have to brace each house to survive the onslought of mayhem outside thier weak an fragile houses. Once the hurricane has passed I notice life return to the village, as if mice emerege from thier burrows once a predator has left. I hear the praise of the village echo throught the town with several new voices.
+    ~currentPopulation++
+- ->->
+
+== Ignore_Hurricane ==
+* As all parents must face there are certain teaching moments in the up bringing of children,this is no exception. In order to teach my followers to rely on themselves I must step back in thier most pivital of moments so that they can adore me greater.
+-->->
+
+== Lose_Hurricane ==
+* {Ignore_Hurricane}
+- ->->
  == NoFood ==
 ->Forgotten
+
 === no_faith_end ===
 // Note: Maybe write different content based on different population sizes (tiny/any in between/vast)
 *   Something is wrong.
