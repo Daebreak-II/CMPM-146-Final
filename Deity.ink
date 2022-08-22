@@ -597,6 +597,24 @@ I must do what right of me and offer what help I can give. However I ask myself 
 
 - ->->
 
+->MIDSUMMER
+== MIDSUMMER ==
+Every single year, my followers hold a drinking festival known as the Midsummer festival. People from all over the world gather to celebrate the upcoming summer months. 
+
+But should I even provide my followers with Summer? I could destroy the Sun for all I care, leaving my followers with an endless Winter. 
+
+
+* Destroy Sun
+I grab the Sun with my bare hands, and throw it like a baseball as far as I can, sending it to a universe thirty billion years away. My followers, as well as anyone living on the planet, instantly die from the freezing climate. 
+-> END
+
+* Provide Summer
+My followers rejoice, and faith is restored amongst them. 
+->END
+
+- ->->
+
+
 == Rival_God ==
 It seems like any other day when in the market I notice a commotion, from what I can tell there appears to be a newcomer dismissing my own exsistence. How could such a weak creature disregard my own magnificance, such impertinence. Forcing myself to calm down and assess the situation I notice his clothes and those of his followers, they all wear disheveled robes colored green and yellow, I've seen these colors before they belong to another so called god that has always vied for followers. However this time they have gone out of their way to enter your territory using proxies. As I see it there is only three ways to curb this blatant encroachment of that odious demi-god, gozar. And that is to either order the village to --
 
