@@ -91,7 +91,34 @@ Time passes, and yet the fire at the center of the community burns on. They tend
     It keeps the terrible cold at bay, and for the first time ver, the people no longer have to move to a warmer climate to survive ->Fire_benefits
 + -> 
     Slowly but surely, the community grows, and to their new members they tell the story of the first fire that was gifted to them, by you.
+-
+    
+    Until a disaster strikes. A once in a millenia storm ravages the peoples' settlement, a tragadey unlike any they had seen before. Howling wind buffets the weak structures of the village, and rain moving so fast it feels like hail buffets the people. It punches hulls in the roofs, rips the foundations of buildings apart, and soaks the poeple to the skin. It takes food stores, huts, lives, but last of all the fire that they had become so reliant upon. As if a living, breathing thing had been killed in parallel to the many lives that were lost in the savagery of the storm.
+    
+        What little is left of the food stores that survived the storm is now inedible without the fire to cook it. Without another fire, the village is sure to starve in the coming weeks.
+        
+        
+        
+        
+        + [Attempt to ignite a House] -> Another_Fire
+        + [Cause a rockslide] -> Flint
+        + [Inspire a follower] -> Bow
+        //
+        
+        
+        
+-
+-> top_loop
 
+
+- (Another_Fire)
+You point to a ruined house and focus, as you once did in the past when you first gave the gift of fire. 
+But nothing happens. No flame, no embers, no smoke; not even a spark. You re-double your efforts. Again, nothing happens. The storm as througouhly soaked every piece of wood, stick, and splinter for miles. Nothing will hold a spark. 
+Meanwhile the people gather their soaked, useless food, and the many dead that are scattered throughout the ruined scene. You hear mutterings, and see their anger and sadness. Perhaps they think this was your doing. You feel... Weaker. Smaller. It is not enjoyable.
+
+- (Flint)
+
+- (Bow)
 
 -> top_loop
 
