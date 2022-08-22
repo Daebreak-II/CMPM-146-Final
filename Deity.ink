@@ -235,9 +235,8 @@ VAR age1SideStoryletMenuProps = (replayable, immediate)
 
 === Age_1_side_storylet_menu ===
 // Tunnel to various storylets, use {passTime()} at the end of the tunnel before returning
-*   [option 1] {pass_time()}
 *   [A shrine in the mountains?] ->side_storylet_shrine->
-
+*   [Something in the distance?] ->Raid_By_Rival_Tribe->
 
 - ->->
 
@@ -329,7 +328,7 @@ VAR age2SideStoryletMenuProps = (replayable, immediate)
 // Tunnel to various storylets, use {passTime()} at the end of the tunnel before returning
 *   [A commotion in the field] ->side_storylet_poor_harvest_body->
 *   [The lakes...] ->side_storylet_miracle->
-*   [option 3] {pass_time()}
+*   [More things in the distance?] ->Rival_God->
 
 - ->->
 
@@ -398,8 +397,8 @@ VAR age3SideStoryletMenuProps = (replayable, immediate)
 === Age_3_side_storylet_menu ===
 // Tunnel to various storylets, use {passTime()} at the end of the tunnel before returning
 *   [Another hunting trip?] ->side_storylet_bear_attack->
-*   [option 2] {pass_time()}
-*   [option 3] {pass_time()}
+*   [Something is brewing...] ->Natural_Disaster->
+*   [A festival?] ->
 
 - ->->
 
