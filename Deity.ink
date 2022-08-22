@@ -143,11 +143,11 @@ VAR age1SideStoryletMenuProps = (replayable, immediate)
 
 === Age_2 ===
 // Agricultural age (MOVE IF WRONG)
-Age 2
 - (loop)
     { currentPopulation ? gone: -> no_population_end }
     { currentFaith ? none: -> no_faith_end }
-    It has been {currentTime} {currentTime ? one: season | seasons} since (something)
+    Since I've last checked, {currentTime} {currentTime ? one: generation of people has | generations have} passed since the followers have learned to make fire.
+    {age_2_flavor()}
     {currentTime ? four:
         -> Age_2_end_event ->
         ->->
@@ -156,6 +156,14 @@ Age 2
     <- Age_2_side_storylet_menu_description(->loop)
     <- check_follower_status(->loop)
     ->DONE
+
+== function age_2_flavor ==
+{   not Age_2_main_storylet_body:
+    {~ A follower can be seen spearfishing in the nearby river.| There is a group of people in the middle of the settlement. One of them is teaching the young about the creation of fire.| Someone is returning with a large basket of fruits, berries, and other plants.}
+-   else:
+    {~ A follower can be seen taking water to the field.| There is a group of people in the middle of the settlement. One of them is teaching the young about the creation of fire.| Someone is tending to the plants in the field.}
+}
+~return
 
 === Age_2_end_event ===
     Since the people have an understanding of the lay of the land and lay down some seeds, there is now a steady source of food. No longer are the days where several people leave and expend a lot of energy just to find small amounts of food for the rest of my people.
