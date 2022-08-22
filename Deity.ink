@@ -109,22 +109,23 @@ Time passes, and yet the fire at the center of the community burns on. They tend
 
 
 - (Another_Fire)
-You point to a ruined house and focus, as you once did in the past when you first gave the gift of fire. 
-But nothing happens. No flame, no embers, no smoke; not even a spark. You re-double your efforts. Again, nothing happens. The storm as througouhly soaked every piece of wood, stick, and splinter for miles. Nothing will hold a spark. 
-Meanwhile the people gather their soaked, useless food, and the many dead that are scattered throughout the ruined scene. You hear mutterings, and see their anger and sadness. Perhaps they think this was your doing. You feel... Weaker. Smaller. It is not enjoyable. 
+I point to a ruined house and focus, as I once did in the past when I first gave the gift of fire. 
+But nothing happens. No flame, no embers, no smoke; not even a spark. I re-double your efforts. Again, nothing happens. The storm as througouhly soaked every piece of wood, stick, and splinter for miles. Nothing will hold a spark. 
+Meanwhile the people gather their soaked, useless food, and the many dead that are scattered throughout the ruined scene. I hear them muttering, and see their anger and sadness. Perhaps they think this was my doing. I feel... Weaker. Smaller. It is not enjoyable. 
 ~ currentPopulation--
 + [Wait]
-    As you observe the sorry scene in the coming months, more people do indeed die. It is a small famine, and all suffer for it. Their precious fire taken from them, they are forced to result to the old ways of gathering food which are not designed to sustain such a large community. They scavenge bland and barely edible plants, and hunt what small game remains in the area.
-        Some think the storm is a test, or a reprimand from an unhappy you. The faith of some is shaken.
-        Not everyone is devoted to reconstruction or hunting. One enterprising person, has taken matters into the own hands. One night, on a cold night, a small light shines from their abode, and a small snake of smoke trails into the night sky. He has managed to create his own fire, with which the village rejoices around. With his advancement, there is no worry about the fire going out, for they have the power to make their own. But it is not yours, and many are aware of it.
+    As I observe the sorry scene in the coming months, more people do indeed die. It is a small famine, and all suffer for it. Their precious fire taken from them, they are forced to result to the old ways of gathering food which are not designed to sustain such a large community. They scavenge bland and barely edible plants, and hunt what small game remains in the area.
+        Some think the storm is a test, or a direct reprimand fom me. The faith of some is shaken.
+        Not everyone is devoted to reconstruction or hunting. I spy one enterprising person, who has taken matters into their own hands. One night, on a cold night, I see a small light shining from their abode, and a small snake of smoke trailing into the night sky. He has managed to create his own fire, with which the village rejoices around. With his advancement, there is no worry about the fire going out, for they have the power to make their own. But it is not mine, and many are aware of it.
 ~currentFaith--
 -
 
 - (Flint)
-    One disaster after another, you shake a small hill in the village, comprised of a peculiar rock. People cry out in suprised, but it is not nearly big enough to be dangerous. But while the hill falls, a miracle happens, the falling rocks spark, alighting a piece of grass. The suprised shouting is replaced by those of exitement as people wonder at the infant flame. But the method of its creation is not lost on one follower, who remembers the bright sparks he saw as the mound collapsed. However, while he can replicate the sparks, catching a flame is a whole other matter. It takes a week, but he manages to push through. With his advancement, there is no worry about the fire going out, for they have the power to make their own. Many praise him for his breakthrough, but many see it as direct intervention from you, aid for the disaster that they weathered. You can here the chant now, every night, and bask in its glow.
+    Concentrating,  I shake a small hill in the village, comprised of a peculiar rock. People cry out in suprised, but it is not nearly big enough to be dangerous. But while the hill falls, a miracle happens, the falling rocks spark, alighting a piece of grass. The suprised shouting is replaced by those of exitement as people wonder at the infant flame. But the method of its creation is not lost on one follower, who remembers the bright sparks he saw as the mound collapsed. However, while he can replicate the sparks, catching a flame is a whole other matter. It takes a week, but he manages to push through. With his advancement, there is no worry about the fire going out, for they have the power to make their own. Many praise him for his breakthrough, but many see it as direct intervention from me, aid for the disaster that they weathered. I can her them chant now, every night, and bask in its glow.
 ~currentFaith++
 
 - (Bow)
+One follower, is different from the rest. They are constantly fiddling, creating, and breaking. Most look down on them, for they do not produce much of value, but they could be a useful tool. A slate to write upon. 
 
 
 -(conclusion)
