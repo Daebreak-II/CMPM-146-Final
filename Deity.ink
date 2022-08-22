@@ -97,11 +97,8 @@ Time passes, and yet the fire at the center of the community burns on. They tend
     
         What little is left of the food stores that survived the storm is now inedible without the fire to cook it. Without another fire, the village is sure to starve in the coming weeks.
         
-        
-        
-        
         + [Attempt to ignite a House] -> Another_Fire
-        + [Cause a rockslide] -> Flint
+        + [Cause a rockSlide] -> Flint
         + [Inspire a follower] -> Bow
         //
         
@@ -114,11 +111,24 @@ Time passes, and yet the fire at the center of the community burns on. They tend
 - (Another_Fire)
 You point to a ruined house and focus, as you once did in the past when you first gave the gift of fire. 
 But nothing happens. No flame, no embers, no smoke; not even a spark. You re-double your efforts. Again, nothing happens. The storm as througouhly soaked every piece of wood, stick, and splinter for miles. Nothing will hold a spark. 
-Meanwhile the people gather their soaked, useless food, and the many dead that are scattered throughout the ruined scene. You hear mutterings, and see their anger and sadness. Perhaps they think this was your doing. You feel... Weaker. Smaller. It is not enjoyable.
+Meanwhile the people gather their soaked, useless food, and the many dead that are scattered throughout the ruined scene. You hear mutterings, and see their anger and sadness. Perhaps they think this was your doing. You feel... Weaker. Smaller. It is not enjoyable. 
+~ currentPopulation--
++ [Wait]
+    As you observe the sorry scene in the coming months, more people do indeed die. It is a small famine, and all suffer for it. Their precious fire taken from them, they are forced to result to the old ways of gathering food which are not designed to sustain such a large community. They scavenge bland and barely edible plants, and hunt what small game remains in the area.
+        Some think the storm is a test, or a reprimand from an unhappy you. The faith of some is shaken.
+        Not everyone is devoted to reconstruction or hunting. One enterprising person, has taken matters into the own hands. One night, on a cold night, a small light shines from their abode, and a small snake of smoke trails into the night sky. He has managed to create his own fire, with which the village rejoices around. With his advancement, there is no worry about the fire going out, for they have the power to make their own. But it is not yours, and many are aware of it.
+~currentFaith--
+-
 
 - (Flint)
+    One disaster after another, you shake a small hill in the village, comprised of a peculiar rock. People cry out in suprised, but it is not nearly big enough to be dangerous. But while the hill falls, a miracle happens, the falling rocks spark, alighting a piece of grass. The suprised shouting is replaced by those of exitement as people wonder at the infant flame. But the method of its creation is not lost on one follower, who remembers the bright sparks he saw as the mound collapsed. However, while he can replicate the sparks, catching a flame is a whole other matter. It takes a week, but he manages to push through. With his advancement, there is no worry about the fire going out, for they have the power to make their own. Many praise him for his breakthrough, but many see it as direct intervention from you, aid for the disaster that they weathered. You can here the chant now, every night, and bask in its glow.
+~currentFaith++
 
 - (Bow)
+
+
+-(conclusion)
+With the gift of fire in hand and under their control, the people begin to make leaps and bounds in technology. Life is better, but time marches on.
 
 -> top_loop
 
