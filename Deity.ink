@@ -618,7 +618,17 @@ My voice echos throught the village and the villagers comply. The town chieftain
 I believe that maybe the natural course of action is to allow the villagers to dispel the teaching of Gozar. It only makes sense seeing how Gozar demands human sacrifices to appease him. Knowing this the villages will finally learn that my own benevolence is far greater for the prosperity of the village and its inhabitants. As time passes it plays out as I foretold with many of the villagers downright loathing the teachings and the filty of Gozar. Dispite the dissipation of Gozar some of my followers have changed alligence and leave the village in the dark never to return.I vow this will be the last time I allow the pestilence of another god sway my people. 
     ~currentPopulation--
 -->->
- 
+==Festival_Season ==
+This year has had its up and downs but the year is nearly over. I overhear the village debating what type of festival to hold as the year reaches it end. From the one rowdy villager you hear them shouting for a midsummer festival, the crowd seems pleased by this decision especially the town drunks. As the crowd simmer down the cheiftain ask about a harvest festival and similarlly the crowd becomes elated with the idea. From the background i my mind i hear prayers asking which festival would please me more.
+
+    * [Midsummer] ->MIDSUMMER->
+    * [Harvest] ->Harvest_Festival->
+    
+- ->->
+== Harvest_Festival ==
+The warm, sunny summer days have blessed the village with a bountiful harvest. For the last couple of days I have noticed the villages scrambling back and forth, bringing cartloads of vegitables and fruits to the village storage, No doubt to last the frozen winter months. On the last night of the harvest they gather in the town square to prepare for the harvest festival in my honor. Over following days I see that each house is busy preparing meals and drinks for the celebration. Three days later on the equinox the full moon the village finally gathers and the clebration begins. I am elated to see my followers sing, dance, and be jolly for the plethora of goods I have helped produce. At the storke of midnight the entire village stands at the steps of town hall, the chieftain presents the largest pumpkin I have ever seen, it is almost the size of a cow.The village shouts out in joy and praises me for my blessing, they vow to raise the next year's children as my followers.
+~currentPopulation++
+->->
 === no_faith_end ===
 // Note: Maybe write different content based on different population sizes (tiny/any in between/vast)
 *   Something is wrong.
