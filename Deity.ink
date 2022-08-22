@@ -1,10 +1,6 @@
 
 -> Offering
 == Offering ==
-VAR OddsToAddFollowers = 0
-VAR OddsToLoseFollowers = 0
-VAR TotalOdds = 0
-
 
 The smell of delicious food and exquisite fruits catch my attention. 
 
@@ -20,16 +16,13 @@ I bask in the aroma of the shrine, and indulge myself in the delicious food prov
     -> Response
 * Ignore Offering
 Upon reaching the shrine, a pungent smell filled my nostrils. It seems that my followers filled my shrine with their rotten and uneatable food. I immediately leave the area. 
-    ~OddsToLoseFollowers += 5
     ->END
     
 == Response ==
 * Respond with kindness
-        ~OddsToAddFollowers += 5
         //STUFFS
 * No response
 I have provided for my followers for eternities and all they could provide me with is some snacks and fruits? Unbelievable. 
-        ~OddsToLoseFollowers += 5
         //STUFFS
 
 
