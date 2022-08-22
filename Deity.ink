@@ -675,9 +675,9 @@ I must do what right of me and offer what help I can give. However I ask myself 
  - ->->
 
 == Natural_Disaster ==
-~OddsToAddFollowers = 0
-~OddsToLoseFollowers = 0
-~TotalOdds = 0
+//~OddsToAddFollowers = 0
+//~OddsToLoseFollowers = 0
+//~TotalOdds = 0
 
 - So far the village a enjoyed a warm and sunny, with a cool refreshing breeze to liven up the villagers as the meander throught out the day fulfilling various daily tasks. Later that day the sweet waft of morning dew has shifted towards a thich palpable ozone, which cound mean only one thing, a storm. The stormfront makes it way down the plains and by all accounts seem ordinary, however as it reaches the village it turns violent. In my great omnipotence I can see that this change in weather is due to major weather climates coliding with each other. What was once a simple storm has turned into a great hurricane violently twisting and contorting the air to its will. Nothing in it path survives anything smaller then a cow is thrown great distances. Despite the cruel nature my loyal followers pray that I may aid them in their time of need. Should I...
 
@@ -685,22 +685,30 @@ I must do what right of me and offer what help I can give. However I ask myself 
     
     *[Ignore thier prayers]->Ignore_Hurricane->
     
-    *[try my might agaisnt the hurricane]
+    *[try my might agaisnt the hurricane]->Fight_Hurricane
 
--
-->DONE
+- All said and done nothing pain me more then seeing my followers in peril. That being said there comes a time when every bird flys the coop.
+->->
 
 == Aid_Hurricane ==
-I pity my followers I wish that they could have the power to support themselves but then what would be the point of having me, I do need their addoration. Feeling the fatherly need to protect my village I use what little magic i have to brace each house to survive the onslought of mayhem outside thier weak an fragile houses. Once the hurricane has passed I notice life return to the village, as if mice emerege from thier burrows once a predator has left. I hear the praise of the village echo throught the town with several new voices.
+* I pity my followers I wish that they could have the power to support themselves but then what would be the point of having me, I do need their addoration. Feeling the fatherly need to protect my village I use what little magic i have to brace each house to survive the onslought of mayhem outside thier weak an fragile houses. Once the hurricane has passed I notice life return to the village, as if mice emerege from thier burrows once a predator has left. I hear the praise of the village echo throught the town with several new voices.
     ~currentPopulation++
 - ->->
 
 == Ignore_Hurricane ==
-* As all parents must face there are certain teaching moments in the up bringing of children,this is no exception. In order to teach my followers to rely on themselves I must step back in thier most pivital of moments so that they can adore me greater.
+* As all parents must face there are certain teaching moments in the up bringing of children,this is no exception. In order to teach my followers to rely on themselves I must step back in thier most pivital of moments so that they can adore me greater. ->Lose_Hurricane
 -->->
 
+== Fight_Hurricane ==
+* I think to myself what better way to earn the respect and adoration of my followers then to literally blow away the hurricane. I puff my chest and inhale then quickly let out a torrent of wind. ->Lose_Hurricane
+
+- ->->
 == Lose_Hurricane ==
-* {Ignore_Hurricane}
+//~OddsToLoseFollowers = SEED_RANDOM(5)
+
+* {Ignore_Hurricane}[The hurricane has passed and thankfully only a handful of followers were lost, I hear cries of joy in the streets those that have survived are excited to survive the yet most of it seems to be ]
+*{Fight_Hurricane}[The torrent of wind I let out is so strong that it decimates some of the surrounding houses in the blink of an eye, meaning those that were inside are no more. Fortunately or rather unfortunately, the gust pushed the hurricane back but also created a tornado to appear, tearing away all that it could in its path. I have lost more followers then I anticipated, on top of that instead of hearing tears of rejoice, I hear toment and disdain for my actions.] 
+
 - ->->
  == NoFood ==
 ->Forgotten
