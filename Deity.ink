@@ -514,37 +514,26 @@ VAR age6SideStoryletMenuProps = (replayable, immediate)
 - ->->
 
 //SIDE STORYLETS
-//-> Offering
-== Offering ==
-VAR OddsToAddFollowers = 0
-VAR OddsToLoseFollowers = 0
-VAR TotalOdds = 0
+//-> Shrine
+== Shrine ==
 
-The smell of delicious food and exquisite fruits catch my attention. But where could it be coming from? 
+As I survey my vast kingdom, a large statue built atop of the tallest mountain in my kingdom catches my eye. Upon further investigation, I realize that this large statue is actually a statue of myself, and must have been built by my followers, as an offering. 
 
-+ Investigate
-It seems that the smell is coming from the top of the mountain. I begin walking and eventually reach the mountain top, where a shrine resides. 
-    -> Investigation
+I could accept their offering. Or reject it. 
+
+    -> Offering
     
-== Investigation ==
+== Offering ==
 * Accept Offering
-I bask in the aroma of the shrine, and indulge myself in the delicious food provided from my followers. I am accepting of this kind gesture from my followers. 
+The relationship I have with my followers is a two way street. They worship me and are loyal to me, while I provide them with everything they need. I appreciate this kind gesture created by my followers and reward them with _____ (Depending on age)
+
     -> Response
-* Ignore Offering
-Upon reaching the shrine, a pungent smell filled my nostrils. It seems that my followers filled my shrine with their rotten and uneatable food. I immediately leave the area. 
-    ~OddsToLoseFollowers += 5
+* Reject Offering
+I have provided my followers with everything and sustained their lives for eternities, and all they could do is build a statue for me? What ever happened to sacrafices? Unbelievable. 
     ->END
     
 == Response ==
-* Respond with kindness
-        ~OddsToAddFollowers += 5
-        //STUFFS
-* No response
-I have provided for my followers for eternities and all they could provide me with is some snacks and fruits? Unbelievable. 
-        ~OddsToLoseFollowers += 5
-        //STUFFS
-
-
+My followers appreciate my acceptance of their shrine dedicated to me, and spread news around the world of our amazing kingdomn. 
 -
 ->END
 //-> Miracle
