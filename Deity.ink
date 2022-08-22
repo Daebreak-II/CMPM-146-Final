@@ -721,16 +721,18 @@ It seems like any other day when in the market I notice a commotion, from what I
 
 - ->->
 == Civil_War ==
-My voice echos throught the village and the villagers comply. I notice that all the villagers decend on the town square, weapons in hand. Moreover, I see that Gozar's followers are visibly shaking, fully aware of thier impending doom. When the villagers reach the newcomers yelling and lunges dramtically increases the tension. Althought the newcomers are outnumbered and afraid there is a discernible confidence in thier stance. In an instance I notice that one of my followers quickly pounces at one of the newcomers, suddenly loud screams followed by silence are that remain. The newcomers stands over the body with a sneer clenching a bloodied short sword in his hands. This noticiable enrages the villages and skrimish ensues. Within minuets the racket has died down and the bodies of several people lay motionless in the square. This will undoubtedly impart to Gozar that this village is off limits as long as I remain.
+My voice echos throught the village and the villagers comply. I notice that all the villagers decend on the town square, weapons in hand. Moreover, I see that Gozar's followers are visibly shaking, fully aware of thier impending doom. When the villagers reach the newcomers yelling and lunges dramtically increases the tension. Althought the newcomers are outnumbered and afraid there is a discernible confidence in thier stance. In an instance I notice that one of my followers quickly pounces at one of the newcomers, suddenly loud screams followed by silence are that remain. The newcomers stands over the body with a sneer clenching a bloodied short sword in his hands. This noticiable enrages the villages and skrimish ensues. Within minuets the racket has died down and the bodies of several people lay motionless in the square. This will undoubtedly impart to Gozar that this village is off limits as long as I remain. Although the problem is solved I am saddened to learn of the passing of some of my followers. 
     ~currentPopulation--
 - ->->
 == Banish_Gozar ==
-My voice echos throught the village and the villagers comply. The town chieftain and his armed guards cautiously but intently walk down the streets towards the village square.
-
+My voice echos throught the village and the villagers comply. The town chieftain and his armed guards cautiously but intently walk down the streets towards the village square. As the cheiftain arrives at the square an akward silence fills the square, the main priest seems upset of the arrival of the chieftain and both men begin to argue. Suddenly one of the rival apostles runs down the steps and makes a swipe at the chieftain with a hidden dagger, only to be quickly impaled on the tip of spear by the chieftain's bodyguards. The rival priest and his remaining cohorts step back in disbelief. Knowing that the situation is not in thier favor the rival worshippers lay down thier arms and obey the warnings and quietly leave. Althought the situation ended peacefully the teaching of Gozar of done thier damage and some of the villagers leave with the riavl worshippers.
+    ~currentPopulation--
 -->->
 == Let_Gozar_Stay
-
+I believe that maybe the natural course of action is to allow the villagers to dispel the teaching of Gozar. It only makes sense seeing how Gozar demands human sacrifices to appease him. Knowing this the villages will finally learn that my own benevolence is far greater for the prosperity of the village and its inhabitants. As time passes it plays out as I foretold with many of the villagers downright loathing the teachings and the filty of Gozar. Dispite the dissipation of Gozar some of my followers have changed alligence and leave the village in the dark never to return.I vow this will be the last time I allow the pestilence of another god sway my people. 
+    ~currentPopulation--
 -->->
+
  == NoFood ==
 ->Forgotten
 
