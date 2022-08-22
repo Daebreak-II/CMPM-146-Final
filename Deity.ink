@@ -4,77 +4,58 @@
 ==Beginning==
 /*What is a god? An omnipotent, all powerful being, with total control over reality itself? Is it a singular being, or are there many, each governing a separate aspect of the world we perceive? Or is that just our minds, imagining something to our own likeness and understanding, which in reality would be very much beyond our control and comprehension of the world. What if it’s both?
 */
-+ [...]
-You
-Awake.
++ [The void.]
+Me.
+Me?
 There is nothing, no one, no thing, no self, not even concept in this void. 
 Listless it drifts, even though there is nothing which to drift on or by. 
 It is timeless, an eternity passes in a second, and a second takes all eternity, if such a thing did exist. 
 -
-+ [Drift]
-You drift/wait, but it is the same. It is the very same moment as the first, or if there was a difference, it is unperceivable.
++ [*Drift*]
+I drift around, trying to leave a wake, but it is the same. It is the very same moment as the first, or if there was a difference, it is unperceivable.
+I wonder, for an eternity, or a second, of my existence, but it matters not. Waiting for some epiphany, some action, some thought, some motion, anything. But it does not come. For there is nothing. 
+I begin to gaze outwards into the void. Or inwards. There is no boundary between the self and everything that is. But I search nonetheless.
 -
-+ [List]
-And yet, you are still here. What does that mean? What is “you”?
-- 
-+ [Think]
-+ [Ponder]
++ [*Scour the void*]
+There must be something, anything, besides me. I cannot be all that there is. And yet, there is nothing else. 
 -
-You wonder, for an eternity, or a second; it matters not. Waiting for some epiphany, some action, some thought, some motion, anything. But it does not come. For there is nothing. 
-+ [Search]
-Aware of your own existence, you begin to look outwards. Or inwards. There is no boundary between the self and everything that is. But you search anyways
++ [*Concentrate*]
+I attempt to meditate, but what is there to focus on? Reality is empty, and so am I. But I are something, a concept or idea that can be understood, provide a substrate for thought. And so I focus on whatever it I may be.
+A glittering form appears from the void, shapeless and ever changing, but it is something. Like my mind, it is a concept to hold onto. It draws me in, as I do it; A body to call my own. Something, in this vast endlessness. A barrier between the self and every thing that is not. 
+But as I play and marvel at my new form, it presents to me a stimulus. A sensation. A feeling. There is something out there, tickling the senses. Small, but salient.
 -
-+ [Scour]
-There must be something, anything, besides you. You cannot be all that there is. And yet, you find nothing. There is nothing else. 
--
-+ [Concentrate]
-You focus, but what is there to focus on? Reality is empty, and so are you. But you are something, a concept or idea that can be understood, provide a substrate for thought. And so you focus on whatever it is you are. A glittering form appears from the void, shapeless and ever changing, but it is something. Like your mind, it is a concept to hold onto. It takes you in, as you do it; A body to call your own. Something, in this vast endlessness. A barrier between the self and every thing that is not. But as you play and marvel at your new form, it presents to you a stimulus. A sensation. A feeling. There is something out there, tickling your senses. Small, but salient.
--
-+ [Search]
++ [A spark?]
 In the distance, there is something.
-Infinitesimal, but perceptible. A pinprick of light, a single ray, enough to draw the attention of your consciousness. But it presents a dilemma, it is foreign in you and your world. Approach it, and risk… something? Everything? Or ignore it, shun it, return to the void from which it is safe and swaddle in its nothingness.
+Infinitesimal, but perceptible. A pinprick of light, a single ray, enough to draw the attention of the conscious. But it presents a dilemma, it is foreign to the void. Approach it, and risk… something? Everything? Or ignore it, shun it, and return to the void from which it is safe and swaddle in its nothingness.
 -
-+ [The Darknes is Safe]
-Alas, it cannot be ignored. It will not go away. Small and imperceptibly as it is, it will not be ignored. It must be dealt with, else it will continue to itch and break the comforting emptiness as long as it exists.
++ [There is safety in familiarity.]
+-   (spark) { spark < 2: 
+    Alas, it cannot be ignored. It will not go away. Small and imperceptibly as it is, it will not be ignored. It must be dealt with, else it will continue to itch and break the comforting emptiness as long as it exists.
+    - else: But the light remains. It tears into the void, disturbing the emptiness.
+    }
 -
-+ [Inspect the itch]
-	It is endlessly far away, but it does not matter as time holds no meaning. As you draw closer, one ray of light turns into two, then three, then many; It assaults your senses as you tentatively approach. Colors become perceptible, and then sound, as more and more things join the cacophony of sensations. You are almost there now, and it is almost unbearable in its energy. The amount of things spewing from it is unfathomable, perhaps it was a mistake to try and route whatever was producing this out. But there is no turning back now. 
++ [*Inspect the itch*]
+	It is endlessly far away, but it does not matter as time holds no meaning. As I draw closer, one ray of light turns into two, then three, then many; It assaults the senses as I tentatively approach. Colors become perceptible, and then sound, as more and more things join the cacophony of sensations. 
+	Nearly there, it is almost unbearable in its energy. The amount of things spewing from it is unfathomable, perhaps it was a mistake to try and route whatever was producing this out.
 -
-+ [Look Closer]
-	As you arrive, you see the shape of what you have been pursuing. It is a window, unceremoniously spewing energy into your safe, quiet void. Through it, you can see a strangely finite world, full of color and moving things. It hurts to watch at first, but as you get used to the shock, it becomes endlessly fascinating. Things! They move, they make noise, they stop, they go, all on incomprehensible reasoning, it is entertaining, and for a time, you forget the void from whence you came. Time, which previously had to meaning or purpose, governs the things that move within this window, and you spend it willingly, watching and learning the strange cycles of the world. 
++ [*Look Closer*]
+	As I arrive, I can make shapes apart from one another. There is a window, unceremoniously spewing energy into the safe, quiet void. Through it, a strangely finite world, full of color and moving things. It hurts to watch at first, but as I am familiarized to the change, it becomes endlessly fascinating.
+	Things! They move, they make noise, they stop, they go, all on incomprehensible reasoning, it is entertaining, and for a time,  the void from whence I came is but a tangent. Time, which previously had to meaning or purpose, governs the things that move within this window, and I spend it willingly, watching and learning the strange cycles of the world.
+* [*Turn back*] The light is too much. I quickly retreat to the comforting darkness, away from any potential danger it could pose. ->spark
 -
-+ [Watch]
-	At one point, you notice a circle of beings. It is like countless you have seen before. They circle around some wood, chanting. It is peculiar, and difficult to tell why it draws your attention so. Perhaps the sound they chant is pleasing, perhaps it is the most perfect circle you have ever seen, and yet you continue to watch. You see, from your time observing this world, that they are gaunt, and that the land around them is not as green as it once was. They look haggard but hopeful, and so they continue the chant. 
+* [*Continue watching*]
+	 A circle of beings comes into view. While strange, there is an uncanny feeling I know their shape. They circle around some wood, chanting. It is peculiar, and difficult to tell why it draws my attention so. Perhaps the sound they chant is pleasing, perhaps it is the most perfect circle ever seen, and yet I continue watching. From my time observing this world, that they are gaunt, and that the land around them is not as green as it once was. They look haggard but hopeful, and so they continue the chant. 
 -
-+ [Observe]
-	As you listen, you feel… something. Something completely different from all the amazing sensations that this world gave you in the past. Something… new. It is deep inside, and it feels like a fire, just an ember, growing, and warming. You feel… powerful. But after a while, the chant begins to fade. You see empty eyes, and hopeless gazes.
+* [*Listen*]
+	Listening closely, I feel… something. Something completely different from all the amazing sensations that this world gave me in the past. Something… new. It is deep inside, and it feels like a fire, just an ember, growing, and warming. It feels… powerful. But after a while, the chant begins to fade. There is nothing but empty eyes, and hopeless gazes.
 -
-+ [point to a torch] As you point, you feel. The torch smolders, and none one notices, for they are too busy chanting. The wind picks up.
-+ [Turn away] ->turn_away
+* [The wood...] As I point, I feel. The center of the wood pile smolders, and none one notices, for they are too busy chanting. The wind picks up.
 -
-+ [Focus]
-With the wind, the ember grows. One person notices, and shouts. They shout your name. As more people notice, you feel invigorated.
-+ [Give up] 
-    You give up, it is not worth the time or effort. -> turn_away
--
-+ [Focus more]
-The torch roars to life, not even a gale could put it out now. People yell and the chanting grows louder, with the circle of people eventually dissolving into chaos. After a while, the chanting stops, and although the power lessens, you still hear whipsers of your name, like raindrops. One person picks up the torch, and the group journeys in the direction it represented.
-+ [Give up] 
-    You give up, it is not worth the time or effort. The embers fade, and eventually so too does the chanting. the gaunt people walk away, dissapointed. -> turn_away
--
+* [*Focus*]
+With the wind, the ember grows. One person notices, and shouts. They shout something. A name? As more people notice, I feel increasingly invigorated.
+The flame roars to life, not even a gale could put it out now. People shout and the chanting grows louder, with the circle of people eventually dissolving into chaos. After a while, the chanting stops, and although the power lessens, there remain whipsers of a name, like raindrops. Someone picks up some wood burning on one end, and the group journeys in the direction it represented.
+-*  [I should follow them.]
 -> top_loop
-
-- (turn_away)
-You turn away from the noise of existence, and close your mind to reality.
-+ [Wonder] ->wonder
-
-- (wonder)
-You ponder what's happened. What does it mean?
-+ [slumber] ->slumber
-
-- (slumber)
-You enter a deep sleep, and fade into the quiet darkness.
-+ [...] ->Beginning
 
 == Fire_Age ==
 Time passes, and yet the fire at the center of the community burns on. They tend to it day and night, and discover it many uses
@@ -442,7 +423,7 @@ I can see my followers praying everyday, hoping for a miracle.
     Though the people have plenty of food in stock, it seems that they still want out of the settlement to search for some. Weapons and traps in hand, it is clear that they are out for meat. Following familiar paths, these hunters take aim at anything they can sink their arrows into.
     There is a distinct smell in the air. Quite a strong odor, and the hunters follow one another as they search for its source. They stop in front of some tall brush.
 *   [What's behind it?] One of the hunters, arrow in hand, parts the foliage to reveal a bear, staring her down. In a panic, the hunters make a break for it, running to find the nearest path.
--*  [*Light some fires*] The fire works wonders at scaring the bear, but in my desperation, I made the fires too intense. It burns much of the forest away, even though I also create some rains to quell the blaze. Though everyone made it out alive, I hope my actions don't upset them too much
+-*  [*Light some fires*] The fire works wonders at scaring the bear, but in my desperation, I made the fires too intense. It burns much of the forest away, even though I also create some rains to quell the blaze. Though everyone made it out alive, I hope my actions don't upset them too much.
     ~currentFaith--
 *   [*Fell some trees*] I put some effort into forcing the trees to fall over. With some luck, I manage to cause a tree to come crashing down right as the hunters run by. The bear, with its vision suddenly blocked by a fallen tree, is startled and runs away. I've managed to keep everyone unharmed, though they will have to clear out the mess later.
 *   [*Create some noise*] Searching for nearby animals, I startle them to attempt to have them run between the bear and the hunters. However, this bear has its sights set on the hunters and ignores all the other critters. I'm sorry, hunters. I tried.
