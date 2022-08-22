@@ -710,6 +710,27 @@ I must do what right of me and offer what help I can give. However I ask myself 
 *{Fight_Hurricane}[The torrent of wind I let out is so strong that it decimates some of the surrounding houses in the blink of an eye, meaning those that were inside are no more. Fortunately or rather unfortunately, the gust pushed the hurricane back but also created a tornado to appear, tearing away all that it could in its path. I have lost more followers then I anticipated, on top of that instead of hearing tears of rejoice, I hear toment and disdain for my actions.] 
 
 - ->->
+
+== Rival_God ==
+It seems like any other day when in the market I notice a commotion, from what I can tell there appears to be a newcomer dismissing my own exsistence. How could such a weak creature disregard my own magnificance, such impertinence. Forcing myself to calm down and assess the situation I notice his clothes and those of his followers, they all wear disheveled robes colored green and yellow, I've seen these colors before they belong to another so called god that has always vied for followers. However this time they have gone out of their way to enter your territory using proxies. As I see it there is only three ways to curb this blatant encroachment of that odious demi-god, gozar. And that is to either order the village to --
+
+    *[violently push back on the teachings of gozar and his followers]-> Civil_War->
+    *[peacefully escort and banish gozar's followers]-> Banish_Gozar->
+    *[Respectably allow the followers continue thier teaching]->Let_Gozar_Stay->
+-
+
+- ->->
+== Civil_War ==
+My voice echos throught the village and the villagers comply. I notice that all the villagers decend on the town square, weapons in hand. Moreover, I see that Gozar's followers are visibly shaking, fully aware of thier impending doom. When the villagers reach the newcomers yelling and lunges dramtically increases the tension. Althought the newcomers are outnumbered and afraid there is a discernible confidence in thier stance. In an instance I notice that one of my followers quickly pounces at one of the newcomers, suddenly loud screams followed by silence are that remain. The newcomers stands over the body with a sneer clenching a bloodied short sword in his hands. This noticiable enrages the villages and skrimish ensues. Within minuets the racket has died down and the bodies of several people lay motionless in the square. This will undoubtedly impart to Gozar that this village is off limits as long as I remain.
+    ~currentPopulation--
+- ->->
+== Banish_Gozar ==
+My voice echos throught the village and the villagers comply. The town chieftain and his armed guards cautiously but intently walk down the streets towards the village square.
+
+-->->
+== Let_Gozar_Stay
+
+-->->
  == NoFood ==
 ->Forgotten
 
