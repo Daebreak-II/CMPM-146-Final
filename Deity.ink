@@ -99,9 +99,6 @@ Time passes, and yet the fire at the center of the community burns on. They tend
 -> Age_1 ->
 -> Age_2 ->
 -> Age_3 ->
--> Age_4 ->
--> Age_5 ->
--> Age_6 ->
 
 -> forgotten_end
 
@@ -325,7 +322,9 @@ Age 3
     ->DONE
 
 === Age_3_end_event ===
-+ [Add Age 3 End event here] {pass_time()}
+    With the people discovering metal from my experimentation, They've created their own. Soon afterwards, mixtures of metal were tested, and the population exploded. With rapid growth, I find myself with new faces that can provide more power.
+*   Quite impressive, really[.], but it seems that it wasn't to last.
+{pass_time()}
 ->->
 
 
@@ -340,7 +339,14 @@ VAR age3MainStoryletProps = oneShot
 ->DONE
 
 === Age_3_main_storylet_body ===
-something happened, and time has passed (add story content here)
+    "CRUNCH!" He looks up at the night sky, with an exhausted look on his face. In his callused hands, two rocks, one of which has been reduced to pebbles. Out of frustration, he lobs the debris into the fire in the middle of the settlement and calls it a night. Bits of the heated rock glow, then seemingly vanish into the flames as the heated rocks glow to nearly match the fire's colors.
+-   (choice)
+*   [Did those {toss: other} rocks really disappear?] As I get closer to the fire, it seems like there are still lumps in there, though at this point they are brighter than the fire. I reach in to pick up one, unfazed by the heat.
+*   (toss) {not toss}[*Toss a small rock in the fire*] I toss a rock into the fire. Unlike the pebbles thrown in by the craftsman, the one I tossed in explodes. Though it was a small pop, it seems to have woken up a few people. Sorry about that. -> choice
+-*  [What happens if I add more heat?] Moving the rock closer to the fire, I add some of my own heat to the rock. After adding a large amount of energy. The rock finally falls apart, with part of it flowing away as a glowing liquid.
+-   I decide to have a look at the fire again the very next morning. However, it seems that I am not the only one interested in the rock. Many gather to inspect the material, and pick at the ground using the ground using this strange solid blob. Then at a nearby tree. Then some rocks.
+    It turns out this material is much better than anything they've worked with before, and they begin to go to great lengths to try to create more of it.
+*   [I'll leave them to it.]
 {pass_time()}
 ->->
 
@@ -356,166 +362,7 @@ VAR age3SideStoryletMenuProps = (replayable, immediate)
 
 === Age_3_side_storylet_menu ===
 // Tunnel to various storylets, use {passTime()} at the end of the tunnel before returning
-+   [option 1] {pass_time()}
-+   [option 2] {pass_time()}
-+   [option 3] {pass_time()}
-
-- ->->
-
-=== Age_4 ===
-Age 4
-- (loop)
-    { currentPopulation ? gone: -> no_population_end }
-    { currentFaith ? none: -> no_faith_end }
-    It has been {currentTime} {currentTime ? one: season | seasons} since (something)
-    {currentTime ? four:
-        -> Age_4_end_event ->
-        ->->
-    }
-    <- Age_4_main_storylet_description(->loop)
-    <- Age_4_side_storylet_menu_description(->loop)
-    <- check_follower_status(->loop)
-    ->DONE
-
-=== Age_4_end_event ===
-+ [Add Age 4 End event here] {pass_time()}
-->->
-
-
-VAR age4MainStoryletProps = oneShot
-=== Age_4_main_storylet_description (->ret) ===
-{ StoryletPropTest(age4MainStoryletProps, Age_4_main_storylet_body, ->Age_4_main_storylet_body):
-    + [Age 4 main storylet option]
-      -> Age_4_main_storylet_body ->
-
-    -> ret
-}
-->DONE
-
-=== Age_4_main_storylet_body ===
-something happened, and time has passed (add story content here)
-{pass_time()}
-->->
-
-VAR age4SideStoryletMenuProps = (replayable, immediate)
-=== Age_4_side_storylet_menu_description (->ret) ===
-{ StoryletPropTest(age4SideStoryletMenuProps, Age_4_side_storylet_menu, ->Age_4_side_storylet_menu) && ( not(currentTime ? three) && not Age_4_main_storylet_body) || (currentTime <= three && Age_4_main_storylet_body):
-    + [Age 4 side storylet option]
-      -> Age_4_side_storylet_menu ->
-
-    -> ret
-}
-->DONE
-
-=== Age_4_side_storylet_menu ===
-// Tunnel to various storylets, use {passTime()} at the end of the tunnel before returning
-+   [option 1] {pass_time()}
-+   [option 2] {pass_time()}
-+   [option 3] {pass_time()}
-
-- ->->
-
-=== Age_5 ===
-Age 5
-- (loop)
-    { currentPopulation ? gone: -> no_population_end }
-    { currentFaith ? none: -> no_faith_end }
-    It has been {currentTime} {currentTime ? one: season | seasons} since (something)
-    {currentTime ? four:
-        -> Age_5_end_event ->
-        ->->
-    }
-    <- Age_5_main_storylet_description(->loop)
-    <- Age_5_side_storylet_menu_description(->loop)
-    <- check_follower_status(->loop)
-    ->DONE
-
-=== Age_5_end_event ===
-+ [Add Age 5 End event here] {pass_time()}
-->->
-
-
-VAR age5MainStoryletProps = oneShot
-=== Age_5_main_storylet_description (->ret) ===
-{ StoryletPropTest(age5MainStoryletProps, Age_5_main_storylet_body, ->Age_5_main_storylet_body):
-    + [Age 5 main storylet option]
-      -> Age_5_main_storylet_body ->
-
-    -> ret
-}
-->DONE
-
-=== Age_5_main_storylet_body ===
-something happened, and time has passed (add story content here)
-{pass_time()}
-->->
-
-VAR age5SideStoryletMenuProps = (replayable, immediate)
-=== Age_5_side_storylet_menu_description (->ret) ===
-{ StoryletPropTest(age5SideStoryletMenuProps, Age_5_side_storylet_menu, ->Age_5_side_storylet_menu) && ( not(currentTime ? three) && not Age_5_main_storylet_body) || (currentTime <= three && Age_5_main_storylet_body):
-    + [Age 5 side storylet option]
-      -> Age_5_side_storylet_menu ->
-
-    -> ret
-}
-->DONE
-
-=== Age_5_side_storylet_menu ===
-// Tunnel to various storylets, use {passTime()} at the end of the tunnel before returning
-+   [option 1] {pass_time()}
-+   [option 2] {pass_time()}
-+   [option 3] {pass_time()}
-
-- ->->
-
-=== Age_6 ===
-Age 6
-- (loop)
-    { currentPopulation ? gone: -> no_population_end }
-    { currentFaith ? none: -> no_faith_end }
-    It has been {currentTime} {currentTime ? one: season | seasons} since (something)
-    {currentTime ? four:
-        -> Age_6_end_event ->
-        ->->
-    }
-    <- Age_6_main_storylet_description(->loop)
-    <- Age_6_side_storylet_menu_description(->loop)
-    <- check_follower_status(->loop)
-    ->DONE
-
-=== Age_6_end_event ===
-+ [Add Age 6 End event here] {pass_time()}
-->->
-
-
-VAR age6MainStoryletProps = oneShot
-=== Age_6_main_storylet_description (->ret) ===
-{ StoryletPropTest(age6MainStoryletProps, Age_6_main_storylet_body, ->Age_6_main_storylet_body):
-    + [Age 6 main storylet option]
-      -> Age_6_main_storylet_body ->
-
-    -> ret
-}
-->DONE
-
-=== Age_6_main_storylet_body ===
-something happened, and time has passed (add story content here)
-{pass_time()}
-->->
-
-VAR age6SideStoryletMenuProps = (replayable, immediate)
-=== Age_6_side_storylet_menu_description (->ret) ===
-{ StoryletPropTest(age6SideStoryletMenuProps, Age_6_side_storylet_menu, ->Age_6_side_storylet_menu) && ( not(currentTime ? three) && not Age_6_main_storylet_body) || (currentTime <= three && Age_6_main_storylet_body):
-    + [Age 6 side storylet option]
-      -> Age_6_side_storylet_menu ->
-
-    -> ret
-}
-->DONE
-
-=== Age_6_side_storylet_menu ===
-// Tunnel to various storylets, use {passTime()} at the end of the tunnel before returning
-+   [option 1] {pass_time()}
++   [option 1] ->side_storylet_bear_attack->
 +   [option 2] {pass_time()}
 +   [option 3] {pass_time()}
 
@@ -572,6 +419,7 @@ I can see my followers praying everyday, hoping for a miracle.
 -   ->->
  
 === side_storylet_poor_harvest_body ===
+// Intended for Age 2
     Looking towards the river, I spot someone in the middle of a nearby field, tool in hand and planted solidly into the soil. A crowd seems to be gathering, and growing displeased at the sight. 
 *   Was there a conflict? [] No, there couldn't have been any. There's no visible tension between any of the parties, and yet, there is a heavy atmosphere emanating from the area.
 -   The person in the field drops to their knees, while the mass, which has stopped accumulating new people continues to stare solemnly at the one in the field.
@@ -580,7 +428,6 @@ I can see my followers praying everyday, hoping for a miracle.
 *   [*Look to the crowd*]
     The people, realizing that there is no way to salvage what is lost, begin to discuss ways to divide food amongst themselves. That can only mean one thing about that field.
 -   Either way, they will need some help if they are to survive.
-// Review the text after this point
 *   [*Rejuvenate the crops*] I gently grab the stalks of one of the crops as a quick test to see that I can regrow the plants. Seeing that it works, I channel what {currentFaith ? little: little } energy I have from their belief in me to channel it into the field.
     Slowly but surely, the plants turn, changing from wilted, chewed away forms to flowering and thriving crops, and the crops that bear fruit, begin to do so. Though the crops are starting to regrow, they will have to be gathered early. The people will only barely get by without starving, but they'll know I helped them.
     ~currentFaith++
@@ -590,6 +437,19 @@ I can see my followers praying everyday, hoping for a miracle.
 -   {pass_time()}
 ->->
 
+=== side_storylet_bear_attack ===
+// Intended for Age 3
+    Though the people have plenty of food in stock, it seems that they still want out of the settlement to search for some. Weapons and traps in hand, it is clear that they are out for meat. Following familiar paths, these hunters take aim at anything they can sink their arrows into.
+    There is a distinct smell in the air. Quite a strong odor, and the hunters follow one another as they search for its source. They stop in front of some tall brush.
+*   [What's behind it?] One of the hunters, arrow in hand, parts the foliage to reveal a bear, staring her down. In a panic, the hunters make a break for it, running to find the nearest path.
+-*  [*Light some fires*] The fire works wonders at scaring the bear, but in my desperation, I made the fires too intense. It burns much of the forest away, even though I also create some rains to quell the blaze. Though everyone made it out alive, I hope my actions don't upset them too much
+    ~currentFaith--
+*   [*Fell some trees*] I put some effort into forcing the trees to fall over. With some luck, I manage to cause a tree to come crashing down right as the hunters run by. The bear, with its vision suddenly blocked by a fallen tree, is startled and runs away. I've managed to keep everyone unharmed, though they will have to clear out the mess later.
+*   [*Create some noise*] Searching for nearby animals, I startle them to attempt to have them run between the bear and the hunters. However, this bear has its sights set on the hunters and ignores all the other critters. I'm sorry, hunters. I tried.
+    ~currentPopulation--
+-
+{pass_time()}
+->->
  
 === no_faith_end ===
 // Note: Maybe write different content based on different population sizes (tiny/any in between/vast)
