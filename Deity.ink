@@ -597,7 +597,6 @@ I must do what right of me and offer what help I can give. However I ask myself 
 
 - ->->
 
-->MIDSUMMER
 == MIDSUMMER ==
 Every single year, my followers hold a drinking festival known as the Midsummer festival. People from all over the world gather to celebrate the upcoming summer months. 
 
@@ -610,10 +609,12 @@ I grab the Sun with my bare hands, and throw it like a baseball as far as I can,
 
 * Provide Summer
 My followers rejoice, and faith is restored amongst them. 
-->END
-
 - ->->
 
+== Harvest_Festival ==
+The warm, sunny summer days have blessed the village with a bountiful harvest. For the last couple of days I have noticed the villages scrambling back and forth, bringing cartloads of vegitables and fruits to the village storage, No doubt to last the frozen winter months. On the last night of the harvest they gather in the town square to prepare for the harvest festival in my honor. Over following days I see that each house is busy preparing meals and drinks for the celebration. Three days later on the equinox the full moon the village finally gathers and the clebration begins. I am elated to see my followers sing, dance, and be jolly for the plethora of goods I have helped produce. At the storke of midnight the entire village stands at the steps of town hall, the chieftain presents the largest pumpkin I have ever seen, it is almost the size of a cow.The village shouts out in joy and praises me for my blessing, they vow to raise the next year's children as my followers.
+~currentPopulation++
+- ->->
 
 == Rival_God ==
 It seems like any other day when in the market I notice a commotion, from what I can tell there appears to be a newcomer dismissing my own exsistence. How could such a weak creature disregard my own magnificance, such impertinence. Forcing myself to calm down and assess the situation I notice his clothes and those of his followers, they all wear disheveled robes colored green and yellow, I've seen these colors before they belong to another so called god that has always vied for followers. However this time they have gone out of their way to enter your territory using proxies. As I see it there is only three ways to curb this blatant encroachment of that odious demi-god, gozar. And that is to either order the village to --
