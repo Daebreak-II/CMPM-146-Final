@@ -6,75 +6,75 @@
 /*What is a god? An omnipotent, all powerful being, with total control over reality itself? Is it a singular being, or are there many, each governing a separate aspect of the world we perceive? Or is that just our minds, imagining something to our own likeness and understanding, which in reality would be very much beyond our control and comprehension of the world. What if it’s both?
 */
 + [...]
-You
+I
 Awake.
 There is nothing, no one, no thing, no self, not even concept in this void. 
 Listless it drifts, even though there is nothing which to drift on or by. 
 It is timeless, an eternity passes in a second, and a second takes all eternity, if such a thing did exist. 
 -
 + [Drift]
-You drift/wait, but it is the same. It is the very same moment as the first, or if there was a difference, it is unperceivable.
+I drift, but it is the same. It is the very same moment as the first, or if there was a difference, it is unperceivable.
 -
 + [List]
-And yet, you are still here. What does that mean? What is “you”?
+And yet, I am still here. What does that mean? What am "I"?
 - 
 + [Think]
 + [Ponder]
 -
-You wonder, for an eternity, or a second; it matters not. Waiting for some epiphany, some action, some thought, some motion, anything. But it does not come. For there is nothing. 
+I wonder, for an eternity, or a second; it matters not. Waiting for some epiphany, some action, some thought, some motion, anything. But it does not come. For there is nothing. 
 + [Search]
-Aware of your own existence, you begin to look outwards. Or inwards. There is no boundary between the self and everything that is. But you search anyways
+Aware of my own existence, I begin to look outwards. Or inwards. There is no boundary between the self and everything that is. But I search anyways
 -
 + [Scour]
-There must be something, anything, besides you. You cannot be all that there is. And yet, you find nothing. There is nothing else. 
+There must be something, anything, besides me. I cannot be all that there is. And yet, I find nothing. See nothing. Feel nothing. For there is nothing else. 
 -
 + [Concentrate]
-You focus, but what is there to focus on? Reality is empty, and so are you. But you are something, a concept or idea that can be understood, provide a substrate for thought. And so you focus on whatever it is you are. A glittering form appears from the void, shapeless and ever changing, but it is something. Like your mind, it is a concept to hold onto. It takes you in, as you do it; A body to call your own. Something, in this vast endlessness. A barrier between the self and every thing that is not. But as you play and marvel at your new form, it presents to you a stimulus. A sensation. A feeling. There is something out there, tickling your senses. Small, but salient.
+I focus, but what is there to focus on? Reality is empty, and so am I. But I am something, a concept or idea that can be understood, provide a substrate for thought. And so I focus on whatever it is I am. A glittering form appears from the void, shapeless and ever changing, but it is something. Like my mind, it is a concept to hold onto. It takes me in, as I do it; A body to call my own. Something, in this vast endlessness. A barrier between the self and every thing that is not. But as I play with and marvel at my new form, it presents to me a stimulus. A sensation. A feeling. There is something out there, tickling my senses. Small, but salient.
 -
 + [Search]
 In the distance, there is something.
-Infinitesimal, but perceptible. A pinprick of light, a single ray, enough to draw the attention of your consciousness. But it presents a dilemma, it is foreign in you and your world. Approach it, and risk… something? Everything? Or ignore it, shun it, return to the void from which it is safe and swaddle in its nothingness.
+Infinitesimal, but perceptible. A pinprick of light, a single ray, enough to draw the attention of my consciousness. But it presents a dilemma, it is foreign in me and my world. Approach it, and risk… something? Everything? Or ignore it, shun it, return to the void from which it is safe and swaddle in its nothingness?
 -
 + [The Darknes is Safe]
-Alas, it cannot be ignored. It will not go away. Small and imperceptibly as it is, it will not be ignored. It must be dealt with, else it will continue to itch and break the comforting emptiness as long as it exists.
+Alas, it cannot be ignored. It will not go away. Small and imperceptibly as it is, it will not be shunned. It must be dealt with, else it will continue to itch and break the comforting emptiness as long as it exists.
 -
 + [Inspect the itch]
-	It is endlessly far away, but it does not matter as time holds no meaning. As you draw closer, one ray of light turns into two, then three, then many; It assaults your senses as you tentatively approach. Colors become perceptible, and then sound, as more and more things join the cacophony of sensations. You are almost there now, and it is almost unbearable in its energy. The amount of things spewing from it is unfathomable, perhaps it was a mistake to try and route whatever was producing this out. But there is no turning back now. 
+	It is endlessly far away, but it does not matter as time holds no meaning. I draw closer, and as I do one ray of light turns into two, then three, then many; It assaults my senses as I tentatively approach. Colors become perceptible, and then sound, as more and more things join the cacophony of sensations. I am almost there now, and it is almost unbearable in its energy. The amount of things spewing from it is unfathomable, perhaps it was a mistake to try and route whatever was producing this out. But there is no turning back now. 
 -
 + [Look Closer]
-	As you arrive, you see the shape of what you have been pursuing. It is a window, unceremoniously spewing energy into your safe, quiet void. Through it, you can see a strangely finite world, full of color and moving things. It hurts to watch at first, but as you get used to the shock, it becomes endlessly fascinating. Things! They move, they make noise, they stop, they go, all on incomprehensible reasoning, it is entertaining, and for a time, you forget the void from whence you came. Time, which previously had to meaning or purpose, governs the things that move within this window, and you spend it willingly, watching and learning the strange cycles of the world. 
+	As I arrive, I see the shape of what I have been pursuing. It is a window, unceremoniously spewing energy into your safe, quiet void. Through it, I see a strangely finite world, full of color and moving things. It hurts to watch at first, but as I get used to the shock, it becomes endlessly fascinating. Things! They move, they make noise, they stop, they go, all on incomprehensible reasoning. It is entertaining, and for a time, I forget the void from whence I came. Time, which previously heald no meaning or purpose, governs the things that move within this window, and I spend it willingly, watching and learning the strange cycles of this microcosm. 
 -
 + [Watch]
-	At one point, you notice a circle of beings. It is like countless you have seen before. They circle around some wood, chanting. It is peculiar, and difficult to tell why it draws your attention so. Perhaps the sound they chant is pleasing, perhaps it is the most perfect circle you have ever seen, and yet you continue to watch. You see, from your time observing this world, that they are gaunt, and that the land around them is not as green as it once was. They look haggard but hopeful, and so they continue the chant. 
+	At one point, I notice a circle of beings. It is like countless I have seen before. They circle around some wood, chanting. It is peculiar, and difficult to tell why it draws my attention so. Perhaps the sound they chant is pleasing, perhaps it is the most perfect circle I have ever seen, and yet I continue to watch. I see, from my time observing this world, that they are gaunt, and that the land around them is not as green as it once was. They look haggard but hopeful, and so they continue the chant. 
 -
 + [Observe]
-	As you listen, you feel… something. Something completely different from all the amazing sensations that this world gave you in the past. Something… new. It is deep inside, and it feels like a fire, just an ember, growing, and warming. You feel… powerful. But after a while, the chant begins to fade. You see empty eyes, and hopeless gazes.
+	As I listen, I feel… something. Something completely different from all the amazing sensations that this world gave me in the past. Something… new. It is deep inside, and it feels like a fire, just an ember, growing, and warming. I feel… powerful. But after a while, the chant begins to fade. I see empty eyes, and hopeless gazes.
 -
-+ [point to a torch] As you point, you feel. The torch smolders, and none one notices, for they are too busy chanting. The wind picks up.
++ [point to a torch] As I point, I feel. The torch smolders, and none one notices, for they are too busy chanting. The wind picks up.
 + [Turn away] ->turn_away
 -
 + [Focus]
-With the wind, the ember grows. One person notices, and shouts. They shout your name. As more people notice, you feel invigorated.
+With the wind, the ember grows. One person notices, and shouts. They shout the name. As more people notice, I feel invigorated.
 + [Give up] 
-    You give up, it is not worth the time or effort. -> turn_away
+    I give up and avert my gaze, it is not worth the time or effort. -> turn_away
 -
 + [Focus more]
-The torch roars to life, not even a gale could put it out now. People yell and the chanting grows louder, with the circle of people eventually dissolving into chaos. After a while, the chanting stops, and although the power lessens, you still hear whipsers of your name, like raindrops. One person picks up the torch, and the group journeys in the direction it represented.
+The torch roars to life, not even a gale could put it out now. People yell and the chanting grows louder, with the circle of people eventually dissolving into chaos. After a while, the chanting stops, and although the power lessens, I still hear whipsers of the name, like raindrops in a drizzle. 
 + [Give up] 
-    You give up, it is not worth the time or effort. The embers fade, and eventually so too does the chanting. the gaunt people walk away, dissapointed. -> turn_away
+    I give up and avert my gaze, it is not worth the time or effort. The embers fade, and eventually so too does the chanting. the people walk away, dissapointed. -> turn_away
 -
 -> top_loop
 
 - (turn_away)
-You turn away from the noise of existence, and close your mind to reality.
+I turn away from the noise of existence, and close my mind to reality.
 + [Wonder] ->wonder
 
 - (wonder)
-You ponder what's happened. What does it mean?
+I ponder what's happened. What does it mean?
 + [slumber] ->slumber
 
 - (slumber)
-You enter a deep sleep, and fade into the quiet darkness.
+I close my eyes and enter a deep sleep, and fade into the quiet darkness.
 + [...] ->Beginning
 
 == Fire_Age ==
@@ -82,7 +82,7 @@ Time passes, and yet the fire at the center of the community burns on. They tend
 
 - (Fire_benefits)
 * [Food]
-    The abbility to rudimentarily cook food allows for increadible meals, 
+    The ability to rudimentarily cook food allows for increadible meals, 
 ->Fire_benefits
 * [Light]
     The light cast by the fire allows activities late into the night, increasing productivity and strengthening the community.
@@ -121,15 +121,15 @@ Meanwhile the people gather their soaked, useless food, and the many dead that a
 -
 
 - (Flint)
-    Concentrating,  I shake a small hill in the village, comprised of a peculiar rock. People cry out in suprised, but it is not nearly big enough to be dangerous. But while the hill falls, a miracle happens, the falling rocks spark, alighting a piece of grass. The suprised shouting is replaced by those of exitement as people wonder at the infant flame. But the method of its creation is not lost on one follower, who remembers the bright sparks he saw as the mound collapsed. However, while he can replicate the sparks, catching a flame is a whole other matter. It takes a week, but he manages to push through. With his advancement, there is no worry about the fire going out, for they have the power to make their own. Many praise him for his breakthrough, but many see it as direct intervention from me, aid for the disaster that they weathered. I can her them chant now, every night, and bask in its glow.
+    Concentrating,  I shake a small hill in the village, comprised of a peculiar rock. People cry out in suprised, but it is not nearly big enough to be dangerous. But while the hill falls, a miracle happens: the falling rocks spark, alighting a piece of grass. The suprised shouting is replaced by those of exitement as people wonder at the infant flame. But the method of its creation is not lost on one follower, who remembers the bright sparks he saw as the mound collapsed. However, while he can replicate the sparks, catching a flame is a whole other matter. It takes a week, but he manages to push through. With his advancement, there is no worry about the fire going out, for they have the power to make their own. Many praise him for his breakthrough, but many see it as direct intervention from me, aid for the disaster that they weathered. I can her them chant now, every night, and bask in its glow.
 ~currentFaith++
 
 - (Bow)
-One follower, is different from the rest. They are constantly fiddling, creating, and breaking. Most look down on them, for they do not produce much of value, but they could be a useful tool. A slate to write upon. 
+One follower, is different from the rest. They are constantly fiddling, creating, and breaking. Most look down on them, for they do not produce much of value, but they could be a useful tool. A slate to write upon. I see him now, fiddling, setting sticks against one another. It is anyones guess what he is trying to do, but it will have to do. I will a current of air to sweep through the room, a minature cyclone, which grabs a stick propped up against another, and spins it with an incredible force. Within seconds, the wood underneath is smoking, and embers flicker and float away from it. A bit heavy-handed perhaps, but necessary for the well-being of the village. It is not lost on him, and soon he is at it with his own hands, spinning wood against wood. It is not easy, but time goes by and eventually, he has uncovered my gift of the secret of fire. With his advancement, there is no worry about the fire going out, for they have the power to make their own. Many do not beleive his recounts of thee cyclone, but none can deny the usefullness of his discovery. 
 
 
 -(conclusion)
-With the gift of fire in hand and under their control, the people begin to make leaps and bounds in technology. Life is better, but time marches on.
+With the gift of fire in hand and under their control, the people begin rebuild with renewed vigor. All is not lost, and soon the village is bigger than ever before. The raindrops of your name are more frequent, and I continue to survey what I have helped guide.
 
 -> top_loop
 
@@ -234,7 +234,53 @@ VAR age1MainStoryletProps = oneShot
 ->DONE
 
 === Age_1_main_storylet_body ===
-something happened, and time has passed (add story content here)
+Time passes, and yet the fire at the center of the community burns on. They tend to it day and night, and discover it many uses
+
+- (Fire_benefits)
+* [Food]
+    The ability to rudimentarily cook food allows for increadible meals, 
+->Fire_benefits
+* [Light]
+    The light cast by the fire allows activities late into the night, increasing productivity and strengthening the community.
+-> Fire_benefits
+* [Warmth]
+    It keeps the terrible cold at bay, and for the first time ver, the people no longer have to move to a warmer climate to survive ->Fire_benefits
++ -> 
+    Slowly but surely, the community grows, and to their new members they tell the story of the first fire that was gifted to them, by you.
+-
+    
+    Until a disaster strikes. A once in a millenia storm ravages the peoples' settlement, a tragadey unlike any they had seen before. Howling wind buffets the weak structures of the village, and rain moving so fast it feels like hail buffets the people. It punches hulls in the roofs, rips the foundations of buildings apart, and soaks the poeple to the skin. It takes food stores, huts, lives, but last of all the fire that they had become so reliant upon. As if a living, breathing thing had been killed in parallel to the many lives that were lost in the savagery of the storm.
+    
+        What little is left of the food stores that survived the storm is now inedible without the fire to cook it. Without another fire, the village is sure to starve in the coming weeks.
+        
+        + [Attempt to ignite a House] -> Another_Fire
+        + [Cause a rockSlide] -> Flint
+        + [Inspire a follower] -> Bow
+
+
+- (Another_Fire)
+I point to a ruined house and focus, as I once did in the past when I first gave the gift of fire. 
+But nothing happens. No flame, no embers, no smoke; not even a spark. I re-double your efforts. Again, nothing happens. The storm as througouhly soaked every piece of wood, stick, and splinter for miles. Nothing will hold a spark. 
+Meanwhile the people gather their soaked, useless food, and the many dead that are scattered throughout the ruined scene. I hear them muttering, and see their anger and sadness. Perhaps they think this was my doing. I feel... Weaker. Smaller. It is not enjoyable. 
+~ currentPopulation--
++ [Wait]
+    As I observe the sorry scene in the coming months, more people do indeed die. It is a small famine, and all suffer for it. Their precious fire taken from them, they are forced to result to the old ways of gathering food which are not designed to sustain such a large community. They scavenge bland and barely edible plants, and hunt what small game remains in the area.
+        Some think the storm is a test, or a direct reprimand fom me. The faith of some is shaken.
+        Not everyone is devoted to reconstruction or hunting. I spy one enterprising person, who has taken matters into their own hands. One night, on a cold night, I see a small light shining from their abode, and a small snake of smoke trailing into the night sky. He has managed to create his own fire, with which the village rejoices around. With his advancement, there is no worry about the fire going out, for they have the power to make their own. But it is not mine, and many are aware of it.
+~currentFaith--
+-> conclusion
+
+- (Flint)
+    Concentrating,  I shake a small hill in the village, comprised of a peculiar rock. People cry out in suprised, but it is not nearly big enough to be dangerous. But while the hill falls, a miracle happens: the falling rocks spark, alighting a piece of grass. The suprised shouting is replaced by those of exitement as people wonder at the infant flame. But the method of its creation is not lost on one follower, who remembers the bright sparks he saw as the mound collapsed. However, while he can replicate the sparks, catching a flame is a whole other matter. It takes a week, but he manages to push through. With his advancement, there is no worry about the fire going out, for they have the power to make their own. Many praise him for his breakthrough, but many see it as direct intervention from me, aid for the disaster that they weathered. I can her them chant now, every night, and bask in its glow.
+~currentFaith++
+-> conclusion
+
+- (Bow)
+One follower, is different from the rest. They are constantly fiddling, creating, and breaking. Most look down on them, for they do not produce much of value, but they could be a useful tool. A slate to write upon. I see him now, fiddling, setting sticks against one another. It is anyones guess what he is trying to do, but it will have to do. I will a current of air to sweep through the room, a minature cyclone, which grabs a stick propped up against another, and spins it with an incredible force. Within seconds, the wood underneath is smoking, and embers flicker and float away from it. A bit heavy-handed perhaps, but necessary for the well-being of the village. It is not lost on him, and soon he is at it with his own hands, spinning wood against wood. It is not easy, but time goes by and eventually, he has uncovered my gift of the secret of fire. With his advancement, there is no worry about the fire going out, for they have the power to make their own. Many do not beleive his recounts of thee cyclone, but none can deny the usefullness of his discovery. 
+-> conclusion
+
+-(conclusion)
+With the gift of fire in hand and under their control, the people begin rebuild with renewed vigor. All is not lost, and soon the village is bigger than ever before. The raindrops of your name are more frequent, and I continue to survey what I have helped guide.
 {pass_time()}
 ->->
 
