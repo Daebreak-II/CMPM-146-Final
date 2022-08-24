@@ -397,8 +397,9 @@ VAR age3SideStoryletMenuProps = (replayable, immediate)
 === Age_3_side_storylet_menu ===
 // Tunnel to various storylets, use {passTime()} at the end of the tunnel before returning
 *   [Another hunting trip?] ->side_storylet_bear_attack->
+*   [A festival?] ->MIDSUMMER->
 *   [Something is brewing...] ->Natural_Disaster->
-*   [A festival?] ->
+
 
 - ->->
 
@@ -550,10 +551,6 @@ I must do what right of me and offer what help I can give. However I ask myself 
  - ->->
 
 == Natural_Disaster ==
-//~OddsToAddFollowers = 0
-//~OddsToLoseFollowers = 0
-//~TotalOdds = 0
-
 - So far the village a enjoyed a warm and sunny, with a cool refreshing breeze to liven up the villagers as the meander throught out the day fulfilling various daily tasks. Later that day the sweet waft of morning dew has shifted towards a thich palpable ozone, which cound mean only one thing, a storm. The stormfront makes it way down the plains and by all accounts seem ordinary, however as it reaches the village it turns violent. In my great omnipotence I can see that this change in weather is due to major weather climates coliding with each other. What was once a simple storm has turned into a great hurricane violently twisting and contorting the air to its will. Nothing in it path survives anything smaller then a cow is thrown great distances. Despite the cruel nature my loyal followers pray that I may aid them in their time of need. Should I...
 
     *[Aid them] ->Aid_Hurricane->
@@ -579,7 +576,6 @@ I must do what right of me and offer what help I can give. However I ask myself 
 
 - ->->
 == Lose_Hurricane ==
-//~OddsToLoseFollowers = SEED_RANDOM(5)
 
 * {Ignore_Hurricane}[The hurricane has passed and thankfully only a handful of followers were lost, I hear cries of joy in the streets those that have survived are excited to survive the yet most of it seems to be ]
 *{Fight_Hurricane}[The torrent of wind I let out is so strong that it decimates some of the surrounding houses in the blink of an eye, meaning those that were inside are no more. Fortunately or rather unfortunately, the gust pushed the hurricane back but also created a tornado to appear, tearing away all that it could in its path. I have lost more followers then I anticipated, on top of that instead of hearing tears of rejoice, I hear toment and disdain for my actions.] 
@@ -587,17 +583,20 @@ I must do what right of me and offer what help I can give. However I ask myself 
 - ->->
 
 == MIDSUMMER ==
-Every single year, my followers hold a drinking festival known as the Midsummer festival. People from all over the world gather to celebrate the upcoming summer months. 
-
-But should I even provide my followers with Summer? I could destroy the Sun for all I care, leaving my followers with an endless Winter. 
-
-
-* Destroy Sun
-I grab the Sun with my bare hands, and throw it like a baseball as far as I can, sending it to a universe thirty billion years away. My followers, as well as anyone living on the planet, instantly die from the freezing climate. 
--> END
-
-* Provide Summer
-My followers rejoice, and faith is restored amongst them. 
+    Every now and again, the people hold a drinking event they call the Midsummer festival. People gather around to celebrate the upcoming summer months. 
+    I wonder, how should I make it more interesting this time around? I haven't overlooked the village in a bit, and this is a prime opportunity to get a larger following.
+*   [A blessing to the crops?] This brings me back to the days before agriculture. <>
+{side_storylet_poor_harvest_body: 
+    Considering this is not the first time I've done this, it is a lot easier to give the crops a boost.
+- else: 
+    I can try to enhance the growth of the crops.
+}
+    <> With a wave of my hand, I let the energy flow into the fields, greatly accelerating the growth of the crops.
+    The people take notice. They begin to cheer at the sight of their food growing before their eyes. They'll be eating good for a while.
+    ~currentPopulation++
+*   [A blessing to the booze?] With some effort, I let my power seep into the containers holding the drinks for the festival. As I look around town, there are whispers of a heavenly drink being distributed. I'm sure these people will wonder how it came to be.
+    ~currentFaith++
+-   {pass_time()}
 - ->->
 
 == Harvest_Festival ==
