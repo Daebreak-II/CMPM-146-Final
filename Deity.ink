@@ -2,6 +2,7 @@
 -> Beginning
 
 ==Beginning==
+// Beginning by Keenan Rea
 /*What is a god? An omnipotent, all powerful being, with total control over reality itself? Is it a singular being, or are there many, each governing a separate aspect of the world we perceive? Or is that just our minds, imagining something to our own likeness and understanding, which in reality would be very much beyond our control and comprehension of the world. What if it’s both?
 */
 + [The void.]
@@ -143,7 +144,6 @@ VAR currentFaith = some
 
 
 === Age_1 ===
-Age 1
 - (loop)
     { currentPopulation ? gone: -> no_population_end }
     { currentFaith ? none: -> no_faith_end }
@@ -158,14 +158,17 @@ Age 1
     ->DONE
 
 === Age_1_end_event ===
-+ [Add Age 1 night event here] {pass_time()}
+// Main Storylet by Keenan Rea
+* [The gift of fire...] With the gift of fire in hand and under their control, the people begin rebuild with renewed vigor. All is not lost, and soon the village is bigger than ever before. The raindrops of your name are more frequent, and I continue to survey what I have helped guide.
+-*  [*Rest after surveying*]
+{pass_time()}
 ->->
 
 
 VAR age1MainStoryletProps = oneShot
 === Age_1_main_storylet_description (->ret) ===
 { StoryletPropTest(age1MainStoryletProps, Age_1_main_storylet_body, ->Age_1_main_storylet_body):
-    + [Age 1 main storylet option]
+    + [A gathering by the fire]
       -> Age_1_main_storylet_body ->
 
     -> ret
@@ -173,6 +176,7 @@ VAR age1MainStoryletProps = oneShot
 ->DONE
 
 === Age_1_main_storylet_body ===
+// Main Storylet by Keenan Rea
 Time passes, and yet the fire at the center of the community burns on. They tend to it day and night, and discover it many uses
 
 - (Fire_benefits)
@@ -192,9 +196,9 @@ Time passes, and yet the fire at the center of the community burns on. They tend
     
         What little is left of the food stores that survived the storm is now inedible without the fire to cook it. Without another fire, the village is sure to starve in the coming weeks.
         
-        + [Attempt to ignite a House] -> Another_Fire
-        + [Cause a rockSlide] -> Flint
-        + [Inspire a follower] -> Bow
+        + [*Attempt to ignite a House*] -> Another_Fire
+        + [*Cause a rockslide*] -> Flint
+        + [*Inspire a follower*] -> Bow
 
 
 - (Another_Fire)
@@ -219,7 +223,6 @@ One follower, is different from the rest. They are constantly fiddling, creating
 -> conclusion
 
 -(conclusion)
-With the gift of fire in hand and under their control, the people begin rebuild with renewed vigor. All is not lost, and soon the village is bigger than ever before. The raindrops of your name are more frequent, and I continue to survey what I have helped guide.
 {pass_time()}
 ->->
 
@@ -264,6 +267,7 @@ VAR age1SideStoryletMenuProps = (replayable, immediate)
 ~return
 
 === Age_2_end_event ===
+// Main storylet by Randy Le
     Since the people have an understanding of the lay of the land and lay down some seeds, there is now a steady source of food. No longer are the days where several people leave and expend a lot of energy just to find small amounts of food for the rest of my people.
     Now, they have all that time for other actions. Perhaps I should see what they've been up to.
 *   [*Check out the buildings*] Since I've last had a look at the settlement, it looks like it's now set in stone that they will be living here. The material used for the buildings have changed to be much more solid.
@@ -285,6 +289,7 @@ VAR age2MainStoryletProps = oneShot
 ->DONE
 
 === Age_2_main_storylet_body ===
+// Main storylet by Randy Le
 { side_storylet_poor_harvest_body: -> skip}
 -   (begin)
     Watching as the people hunt to find food for their next meal, it seems that they have seen better days. There are almost no animals around, and many that are found are startled away by the hunting party before they can take any action. Aside from the rather uninteresting, near-endless search, there is one critter that these hunters observe.
@@ -326,7 +331,7 @@ VAR age2SideStoryletMenuProps = (replayable, immediate)
 
 === Age_2_side_storylet_menu ===
 // Tunnel to various storylets, use {passTime()} at the end of the tunnel before returning
-*   [A commotion in the field] ->side_storylet_poor_harvest_body->
+*   [A commotion in the field?] ->side_storylet_poor_harvest_body->
 *   [The lakes...] ->side_storylet_miracle->
 *   [More things in the distance?] ->Rival_God->
 
@@ -356,6 +361,7 @@ VAR age2SideStoryletMenuProps = (replayable, immediate)
 ~return
 
 === Age_3_end_event ===
+// Main Storylet by Randy Le
     With the people discovering metal from my experimentation, They've created their own. Soon afterwards, mixtures of metal were tested, and the population exploded. With rapid growth, I find myself with new faces that can provide more power.
 *   Quite impressive, really[.], but it seems that it wasn't to last.
 {pass_time()}
@@ -365,7 +371,7 @@ VAR age2SideStoryletMenuProps = (replayable, immediate)
 VAR age3MainStoryletProps = oneShot
 === Age_3_main_storylet_description (->ret) ===
 { StoryletPropTest(age3MainStoryletProps, Age_3_main_storylet_body, ->Age_3_main_storylet_body):
-    + [A lone craftsman, working by the fire]
+    + [A lone craftsman, working by the fire...]
       -> Age_3_main_storylet_body ->
 
     -> ret
@@ -373,6 +379,7 @@ VAR age3MainStoryletProps = oneShot
 ->DONE
 
 === Age_3_main_storylet_body ===
+// Main storylet by Randy Le
     "CRUNCH!" He looks up at the night sky, with an exhausted look on his face. In his callused hands, two rocks, one of which has been reduced to pebbles. Out of frustration, he lobs the debris into the fire in the middle of the settlement and calls it a night. Bits of the heated rock glow, then seemingly vanish into the flames as the heated rocks glow to nearly match the fire's colors.
 -   (choice)
 *   [Did those {toss: other} rocks really disappear?] As I get closer to the fire, it seems like there are still lumps in there, though at this point they are brighter than the fire. I reach in to pick up one, unfazed by the heat.
@@ -387,7 +394,7 @@ VAR age3MainStoryletProps = oneShot
 VAR age3SideStoryletMenuProps = (replayable, immediate)
 === Age_3_side_storylet_menu_description (->ret) ===
 { StoryletPropTest(age3SideStoryletMenuProps, Age_3_side_storylet_menu, ->Age_3_side_storylet_menu) && ( not(currentTime ? three) && not Age_3_main_storylet_body) || (currentTime <= three && Age_3_main_storylet_body):
-    + [Age 3 side storylet option]
+    + [What else is happening around?]
       -> Age_3_side_storylet_menu ->
 
     -> ret
@@ -406,6 +413,7 @@ VAR age3SideStoryletMenuProps = (replayable, immediate)
 //SIDE STORYLETS
 //-> Shrine
 == side_storylet_shrine ==
+// Storylet by Julian Liaw, polish by Randy Le
 As I survey the vast expanse, a large statue built atop of the tallest mountain catches my eye. I assume some people responsible for my arrival climbed these mountains to carve a statue of what they believe I am. There is also some food placed at the foot of the statue.
 
 * What a kind offering!
@@ -417,8 +425,8 @@ Impressive as it is that they dedicated time to creating this, they must be wear
 - {pass_time()}
 ->->
     
-//-> Miracle
 == side_storylet_miracle ==
+// Storylet by Julian Liaw, polish by Randy Le
     Since I have met these people, the rivers and lakes were filled with water, which provided myriad natural resources. They have benefited from this large water supply everyday. The oceans and lakes have been the lifeline of my followers for eternities, but it seems that the lakes are drying up, their water supply slowly but surely disappearing. 
     I could try to help them.
     Or, I could have them challenge the environment. There is strength in survival. 
@@ -445,7 +453,7 @@ I can see my followers praying everyday, hoping for a miracle.
 ->->
  
 === side_storylet_poor_harvest_body ===
-// Intended for Age 2
+// Intended for Age 2 - Storylet by Randy Le
     Looking towards the river, I spot someone in the middle of a nearby field, tool in hand and planted solidly into the soil. A crowd seems to be gathering, and growing displeased at the sight. 
 *   Was there a conflict? [] No, there couldn't have been any. There's no visible tension between any of the parties, and yet, there is a heavy atmosphere emanating from the area.
 -   The person in the field drops to their knees, while the mass, which has stopped accumulating new people continues to stare solemnly at the one in the field.
@@ -460,11 +468,12 @@ I can see my followers praying everyday, hoping for a miracle.
 
 *   [*Enrich the forests*] Just as the people think, the crops are a lost cause. Rather than trying to rebuild what is lost, I can send {currentFaith < strong: a little | quite a bit of } energy into the nearby woods.
     The energy should be {currentFaith < strong: just } enough to produce more wild berries and fruits to also attract some animals. Though my actions may go unnoticed, the people should have plenty of food should they investigate the forest.
+    ~currentPopulation++
 -   {pass_time()}
 ->->
 
 === side_storylet_bear_attack ===
-// Intended for Age 3
+// Intended for Age 3 - Storylet by Randy Le
     Though the people have plenty of food in stock, it seems that they still want out of the settlement to search for some. Weapons and traps in hand, it is clear that they are out for meat. Following familiar paths, these hunters take aim at anything they can sink their arrows into.
     There is a distinct smell in the air. Quite a strong odor, and the hunters follow one another as they search for its source. They stop in front of some tall brush.
 *   [What's behind it?] One of the hunters, arrow in hand, parts the foliage to reveal a bear, staring her down. In a panic, the hunters make a break for it, running to find the nearest path.
@@ -477,11 +486,11 @@ I can see my followers praying everyday, hoping for a miracle.
 {pass_time()}
 ->->
 
+/*
+ *  Begin Rival Tribe storylet
+ */
 == Raid_By_Rival_Tribe  ==
-
-// ~OddsToAddFollowers = 0
-// ~OddsToLoseFollowers = 0
-// ~TotalOdds = 0
+// Storylet by Alex Rugama
 
 - I bask in the worship of my follower on such a serene day, when out of the corner of my eye I spot are large cloud of dust in the distance. I pay it no mind and continue to enjoy in the revelry of my followers. Moments later the cloud grows closer and larger.
 
@@ -491,6 +500,7 @@ I can see my followers praying everyday, hoping for a miracle.
 * Surronded by all the chaos I am suddenly drawn to the prayer of chieftain who pleads that I aid the village in its time of need. ->Heed_Prayer->
 
 - the harrowing ordeal is now over
+{pass_time()}
 ->->
 
 == Heed_Prayer ==
@@ -505,21 +515,21 @@ The constant druming of shouting, cries, and metal clanking. Along with hundreds
 
 == Ignore ==
 The needs of petty humans is below one that so omnipotent and magnanamous as me. They should learn that simple becasue they are in danger ther should not always rely on my support.
-//followers -= (1/2)*followers
 ->Heed_Prayer
 
 == IgnoreChoice ==
 The old village chieftain lays cold and lifeless in the village square, the others remaining enslaved and in shock of the events that have passed. However out of the sadness I hear a faint prayer from a loyal girl. She pleades that I save them from this torment. I wonder if all this could have been avoided, yet I know I can still save them.
 
-    * Should I free them from this torment ->Raid_By_Rival_Tribe
-    * ...Or can these pitiful vilagers rise above the moment.->no_population_end// straight to lose all
+    * Should I free them from this torment ->no_population_end
+    * ...Or can these pitiful vilagers rise above the moment.
+    ~currentPopulation--
+    ->->
+    
 == Aid ==
 I must do what right of me and offer what help I can give. However I ask myself how I should handel this as a vengeful deity or as a benevolent god.
 
     * [Vengeful]
-        // ~OddsToLoseFollowers -= 5
     * [Benevolent]
-        // ~OddsToAddFollowers += 10
 
 -The entire ordeal is over but by looking at the chieftain I can tell there is so much emotions to unpack
 
@@ -532,10 +542,8 @@ I must do what right of me and offer what help I can give. However I ask myself 
  == And_Closer ==
  Minuets pass and the cloud grow ever closer and larger the low rumbling has turned into a strong hurrican of vibrations and noise. I can finally discern the sound of rumbling from the dancing of my people. I ponder if I should warn the chieftain of the upcoming calamity or not.
  * [Warn?!]
-    // ~OddsToAddFollowers += 5
     -> WarnChief ->
  * [Not?]
-    // ~OddsToLoseFollowers +=5
  - ->->
 
  == WarnChief ==
@@ -545,11 +553,16 @@ I must do what right of me and offer what help I can give. However I ask myself 
  ==Right_On_Top ==
  like a shadow in the night a horde of raiders suddenly appears in the distance.
  * {WarnChief} The chief thanks you for your warning and advises those that remain to gather up arms.
-    // ~OddsToAddFollowers += 5
  * {not WarnChief} what lays before me it utter chaos, the once proud chief is visible shaking while uttering warnings and commands to his people. The once festive and joyous music has turned to cries of pain, fear, and anguish. I notice a lone girl crying for her mother while holding an idol of me. I wonder if will ever see her again...
-    // ~OddsToLoseFollowers -= 5
  - ->->
 
+/*
+ *  End Rival Tribe storylet
+ */
+ 
+ /*
+ *  Begin Natural Disaster storylet
+ */
 == Natural_Disaster ==
 - So far the village a enjoyed a warm and sunny, with a cool refreshing breeze to liven up the villagers as the meander throught out the day fulfilling various daily tasks. Later that day the sweet waft of morning dew has shifted towards a thich palpable ozone, which cound mean only one thing, a storm. The stormfront makes it way down the plains and by all accounts seem ordinary, however as it reaches the village it turns violent. In my great omnipotence I can see that this change in weather is due to major weather climates coliding with each other. What was once a simple storm has turned into a great hurricane violently twisting and contorting the air to its will. Nothing in it path survives anything smaller then a cow is thrown great distances. Despite the cruel nature my loyal followers pray that I may aid them in their time of need. Should I...
 
@@ -557,9 +570,10 @@ I must do what right of me and offer what help I can give. However I ask myself 
     
     *[Ignore thier prayers]->Ignore_Hurricane->
     
-    *[try my might agaisnt the hurricane]->Fight_Hurricane
+    *[try my might agaisnt the hurricane]->Fight_Hurricane->
 
 - All said and done nothing pain me more then seeing my followers in peril. That being said there comes a time when every bird flys the coop.
+{pass_time()}
 ->->
 
 == Aid_Hurricane ==
@@ -582,7 +596,13 @@ I must do what right of me and offer what help I can give. However I ask myself 
 
 - ->->
 
+/*
+ *  End Natural Disaster storylet
+ */
+ 
+ 
 == MIDSUMMER ==
+// Storylet by Julian Liaw, polish by Randy Le
     Every now and again, the people hold a drinking event they call the Midsummer festival. People gather around to celebrate the upcoming summer months. 
     I wonder, how should I make it more interesting this time around? I haven't overlooked the village in a bit, and this is a prime opportunity to get a larger following.
 *   [A blessing to the crops?] This brings me back to the days before agriculture. <>
@@ -600,17 +620,23 @@ I must do what right of me and offer what help I can give. However I ask myself 
 - ->->
 
 == Harvest_Festival ==
+// Storylet by Alex Rugama
 The warm, sunny summer days have blessed the village with a bountiful harvest. For the last couple of days I have noticed the villages scrambling back and forth, bringing cartloads of vegitables and fruits to the village storage, No doubt to last the frozen winter months. On the last night of the harvest they gather in the town square to prepare for the harvest festival in my honor. Over following days I see that each house is busy preparing meals and drinks for the celebration. Three days later on the equinox the full moon the village finally gathers and the clebration begins. I am elated to see my followers sing, dance, and be jolly for the plethora of goods I have helped produce. At the storke of midnight the entire village stands at the steps of town hall, the chieftain presents the largest pumpkin I have ever seen, it is almost the size of a cow.The village shouts out in joy and praises me for my blessing, they vow to raise the next year's children as my followers.
 ~currentPopulation++
+{pass_time()}
 - ->->
 
+/*
+ * Begin Rival God storylet
+ */
 == Rival_God ==
+// Storylet by Alex Rugama
 It seems like any other day when in the market I notice a commotion, from what I can tell there appears to be a newcomer dismissing my own exsistence. How could such a weak creature disregard my own magnificance, such impertinence. Forcing myself to calm down and assess the situation I notice his clothes and those of his followers, they all wear disheveled robes colored green and yellow, I've seen these colors before they belong to another so called god that has always vied for followers. However this time they have gone out of their way to enter your territory using proxies. As I see it there is only three ways to curb this blatant encroachment of that odious demi-god, gozar. And that is to either order the village to --
 
     *[violently push back on the teachings of gozar and his followers]-> Civil_War->
     *[peacefully escort and banish gozar's followers]-> Banish_Gozar->
     *[Respectably allow the followers continue thier teaching]->Let_Gozar_Stay->
--
+- {pass_time()}
 
 - ->->
 == Civil_War ==
@@ -625,6 +651,9 @@ My voice echos throught the village and the villagers comply. The town chieftain
 I believe that maybe the natural course of action is to allow the villagers to dispel the teaching of Gozar. It only makes sense seeing how Gozar demands human sacrifices to appease him. Knowing this the villages will finally learn that my own benevolence is far greater for the prosperity of the village and its inhabitants. As time passes it plays out as I foretold with many of the villagers downright loathing the teachings and the filty of Gozar. Dispite the dissipation of Gozar some of my followers have changed alligence and leave the village in the dark never to return.I vow this will be the last time I allow the pestilence of another god sway my people. 
     ~currentPopulation--
 -->->
+/*
+ * End Rival God storylet
+ */
  
 === no_faith_end ===
 // Note: Maybe write different content based on different population sizes (tiny/any in between/vast)
